@@ -1,0 +1,5 @@
+package com.douglas.di.notificacao;
+
+public interface Notificador {
+
+}

@@ -1,0 +1,16 @@
+package com.douglas.di;
+
+import com.douglas.di.modelo.Cliente;
+import com.douglas.di.service.AtivacaoClienteService;
+
+public class Main {
+	public static void main(String[] args) {
+		Cliente joao=  new Cliente("Joao", "joao@dev.com", "322323");
+		Cliente maria=  new Cliente("Maria", "maria@dev.com", "7756564");
+		
+		AtivacaoClienteService ativacaoCliente = new AtivacaoClienteService();
+		ativacaoCliente.ativar(joao);
+		ativacaoCliente.ativar(maria);
+	}
+
+}

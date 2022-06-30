@@ -1,0 +1,10 @@
+package com.douglas.di.service;
+
+import com.douglas.di.modelo.Cliente;
+
+public class AtivacaoClienteService {
+
+	public void ativar(Cliente cliente) {
+		cliente.ativar();
+	}
+}

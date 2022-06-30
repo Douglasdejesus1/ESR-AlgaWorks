@@ -1,0 +1,36 @@
+package com.douglas.di;
+
+import java.math.BigDecimal;
+import java.text.NumberFormat;
+import java.util.Currency;
+import java.util.Locale;
+
+import com.douglas.di.modelo.Cliente;
+import com.douglas.di.modelo.Produto;
+import com.douglas.di.service.AtivacaoClienteService;
+import com.douglas.di.service.EmissaoNotaFiscalService;
+
+public class Main {
+	public static void main(String[] args) {
+		Cliente joao=  new Cliente("Joao", "joao@dev.com", "322323");
+		Cliente maria=  new Cliente("Maria", "maria@dev.com", "7756564");
+		
+		NumberFormat moeda = NumberFormat.getCurrencyInstance(Locale.getDefault());
+		String valor = moeda.format(123000.00);
+		System.out.println(valor);
+		Currency currency = moeda.getCurrency();
+		
+		Produto carro= new Produto("golf",new BigDecimal(valor));
+		
+		AtivacaoClienteService ativacaoCliente = new AtivacaoClienteService();
+		ativacaoCliente.ativar(joao);
+		ativacaoCliente.ativar(maria);
+		
+		
+		
+		EmissaoNotaFiscalService emitirNota = new EmissaoNotaFiscalService();
+		emitirNota.emitir(maria, carro);
+		emitirNota.emitir(joao, carro);
+	}
+
+}
