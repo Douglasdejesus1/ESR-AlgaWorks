@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="com.douglas.di.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="com.douglas.di.service.AtivacaoClienteService"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="com.douglas.di.service.EmissaoNotaFiscalService"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.douglas.di.notificacao.Notificador"/>
+    <fullyQualifiedTypeName name="com.douglas.di.notificacao.NotificadorEmail"/>
+    <fullyQualifiedTypeName name="com.douglas.di.notificacao.NotificadorSms"/>
+</qualifiedTypeNameHistroy>

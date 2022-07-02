@@ -1,0 +1,5 @@
+package com.douglas.algafood.di.modelo;
+
+public class Cliente {
+
+}
