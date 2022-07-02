@@ -20,7 +20,7 @@ public class MeuPrimeiroControler {
 		super();
 		this.ativacaoClienteService = ativacaoClienteService;
 		
-		System.out.println("MeuPrimeiroControler: "+ativacaoClienteService);
+		//System.out.println("MeuPrimeiroControler: "+ativacaoClienteService);
 	}
 
 
@@ -35,7 +35,7 @@ public class MeuPrimeiroControler {
 		ativacaoClienteService.ativar(cliente);
 		
 				
-		return cliente;
+		return "hello";
 	}
 
 }
