@@ -35,7 +35,7 @@ public class MeuPrimeiroControler {
 		ativacaoClienteService.ativar(cliente);
 		
 				
-		return "hello";
+		return "Bom dia";
 	}
 
 }

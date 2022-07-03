@@ -10,4 +10,8 @@
     <fullyQualifiedTypeName name="com.douglas.di.notificacao.Notificador"/>
     <fullyQualifiedTypeName name="com.douglas.di.notificacao.NotificadorEmail"/>
     <fullyQualifiedTypeName name="com.douglas.di.notificacao.NotificadorSms"/>
+    <fullyQualifiedTypeName name="com.douglas.algafood.di.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="com.douglas.algafood.di.notificacao.NotificadorEmail"/>
+    <fullyQualifiedTypeName name="com.douglas.algafood.di.service.AtivacaoClienteService"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>
