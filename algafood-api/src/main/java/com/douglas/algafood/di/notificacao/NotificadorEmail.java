@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import com.douglas.algafood.di.modelo.Cliente;
-@Primary
+@TipoNotificador(NivelUrgencia.PRIORITARIO)
 @Component
 public class NotificadorEmail implements Notificador {
 	

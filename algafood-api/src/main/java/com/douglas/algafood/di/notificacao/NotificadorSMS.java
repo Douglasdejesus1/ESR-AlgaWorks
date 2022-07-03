@@ -3,7 +3,7 @@ package com.douglas.algafood.di.notificacao;
 import org.springframework.stereotype.Component;
 
 import com.douglas.algafood.di.modelo.Cliente;
-
+@TipoNotificador(NivelUrgencia.NAO_PRIORITARIO)
 @Component
 public class NotificadorSMS implements Notificador {
 	

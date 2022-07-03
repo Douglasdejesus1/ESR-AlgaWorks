@@ -4,12 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.douglas.algafood.di.modelo.Cliente;
+import com.douglas.algafood.di.notificacao.NivelUrgencia;
 import com.douglas.algafood.di.notificacao.Notificador;
+import com.douglas.algafood.di.notificacao.TipoNotificador;
 
 @Component
 public class AtivacaoClienteService {
 	
-	
+	@TipoNotificador(NivelUrgencia.NAO_PRIORITARIO)
 	@Autowired
 	private Notificador notificador;
 	
