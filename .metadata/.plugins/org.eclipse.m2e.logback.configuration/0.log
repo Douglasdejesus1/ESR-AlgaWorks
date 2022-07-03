@@ -1034,3 +1034,15 @@
 2022-07-03 06:47:24,318 [Worker-24: Launching algafood-api - AlgafoodApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2022-07-03 06:47:24,372 [Worker-24: Launching algafood-api - AlgafoodApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-07-03 06:47:24,375 [Worker-24: Launching algafood-api - AlgafoodApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-03 06:47:24,375 [Worker-24: Launching algafood-api - AlgafoodApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-03 06:47:24,376 [Worker-24: Launching algafood-api - AlgafoodApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-api\src\test\resources
+2022-07-03 08:18:40,178 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-03 08:18:40,178 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-03 08:18:40,180 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-03 08:18:40,240 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-03 08:18:40,244 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-03 08:18:40,244 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-03 08:18:40,244 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-api\src\test\resources
+2022-07-03 08:18:55,481 [Worker-36: Launching algafood-api - AlgafoodApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-03 08:18:55,482 [Worker-36: Launching algafood-api - AlgafoodApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-03 08:18:55,484 [Worker-36: Launching algafood-api - AlgafoodApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
