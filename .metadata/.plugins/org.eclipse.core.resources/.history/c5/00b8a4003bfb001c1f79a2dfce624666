@@ -1,0 +1,39 @@
+package com.douglas.algafood.di.service;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.douglas.algafood.di.modelo.Cliente;
+import com.douglas.algafood.di.notificacao.NivelUrgencia;
+import com.douglas.algafood.di.notificacao.Notificador;
+import com.douglas.algafood.di.notificacao.TipoNotificador;
+
+@Component
+public class AtivacaoClienteService {
+	
+	@TipoNotificador(NivelUrgencia.PRIORITARIO)
+	@Autowired
+	private Notificador notificador;
+	@PostConstruct
+	void iniciar() {
+		System.out.println("INICIADO");
+	}
+	
+	@PreDestroy
+	void destroy() {
+		System.out.println("TERMINADO");
+	}
+
+	public void ativar(Cliente cliente) {
+		cliente.ativar();
+
+		
+		notificador.notificar(cliente, "Seu cadastro está ativo");
+		}
+	
+
+	
+}
