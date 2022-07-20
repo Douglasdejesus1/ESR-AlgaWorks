@@ -1,0 +1,33 @@
+package com.douglas.algafood.di.notificacao;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@ConfigurationProperties("configuration.email")
+public class NotificadorProperties {
+
+	//Determine o host
+	private String host;
+	//Determine a porta que será usada
+	private Integer port;
+	public NotificadorProperties(String host, Integer port) {
+		super();
+		this.host = host;
+		this.port = port;
+	}
+	public String getHost() {
+		return host;
+	}
+	public void setHost(String host) {
+		this.host = host;
+	}
+	public Integer getPort() {
+		return port;
+	}
+	public void setPort(Integer port) {
+		this.port = port;
+	}
+	
+
+}
