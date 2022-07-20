@@ -8,8 +8,7 @@ import com.douglas.algafood.di.modelo.Cliente;
 @TipoNotificador(NivelUrgencia.NAO_PRIORITARIO)
 @Component
 public class NotificadorSMS implements Notificador {
-	
-	
+
 	
 
 	@Override
@@ -17,6 +16,7 @@ public class NotificadorSMS implements Notificador {
 		
 		System.out.printf("Notificando %s atraves do SMS %s:  %s\n",
 				cliente.getNome(), cliente.getTelefone(),mensagem);
+		
 	}
 	
 }
