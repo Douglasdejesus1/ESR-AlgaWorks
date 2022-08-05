@@ -20,7 +20,6 @@ INDEX VERSION 1.131+C:\Temp\ESR\.metadata\.plugins\org.eclipse.jdt.core
 3774550261.index
 1209105430.index
 69543561.index
-1241247506.index
 790709293.index
 1959505896.index
 3826950250.index
