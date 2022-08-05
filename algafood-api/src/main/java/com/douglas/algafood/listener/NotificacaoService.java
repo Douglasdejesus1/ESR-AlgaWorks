@@ -11,13 +11,13 @@ import com.douglas.algafood.di.service.ClienteAtivadoEvent;
 @Component
 public class NotificacaoService {
 	
-	@TipoNotificador(NivelUrgencia.PRIORITARIO)
+	@TipoNotificador(NivelUrgencia.NAO_PRIORITARIO)
 	@Autowired
 	private Notificador notificador;
 	
 	@EventListener
 	public void clienteAtivadoListener(ClienteAtivadoEvent event) {
-		notificador.notificar(event.getCliente(), "Sua nota fiscal foi emitida!");
+		notificador.notificar(event.getCliente(), "Seu cadastro Esta ativo!");
 	}
 	
 

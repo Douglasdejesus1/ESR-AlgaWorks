@@ -1,4 +1,0 @@
-spring.profiles.active=prod
-server.port=8081
-configuration.email.conection=smpb.algafood.com
-configuration.email.port=45

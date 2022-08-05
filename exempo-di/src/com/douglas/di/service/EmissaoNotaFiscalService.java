@@ -3,7 +3,6 @@ package com.douglas.di.service;
 import com.douglas.di.modelo.Cliente;
 import com.douglas.di.modelo.Produto;
 import com.douglas.di.notificacao.Notificador;
-import com.douglas.di.notificacao.NotificadorEmail;
 
 public class EmissaoNotaFiscalService {
 	private Notificador notificador;

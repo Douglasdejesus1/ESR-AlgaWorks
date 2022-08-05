@@ -1,8 +1,0 @@
-package com.douglas.algafood;
-
-public class MeuPrimeiroControle {
-	public String helo() {
-		return "Hello World";
-	}
-
-}
