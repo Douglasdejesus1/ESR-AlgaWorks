@@ -3186,3 +3186,31 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2022-08-05 20:16:16,589 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-08-05 20:16:16,589 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-08-05 20:16:16,589 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project\src\test\resources
+2022-08-05 22:05:53,679 [Worker-86: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-05 22:05:53,680 [Worker-86: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-05 22:05:53,681 [Worker-86: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-05 22:05:53,825 [Worker-86: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-05 22:05:53,830 [Worker-86: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-05 22:05:53,830 [Worker-86: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-05 22:05:53,830 [Worker-86: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project\src\test\resources
+2022-08-05 22:07:09,299 [Worker-87: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-05 22:07:09,299 [Worker-87: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-05 22:07:09,299 [Worker-87: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-05 22:07:09,306 [Worker-87: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-05 22:07:09,308 [Worker-87: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-05 22:07:09,308 [Worker-87: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-05 22:07:09,309 [Worker-87: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project\src\test\resources
+2022-08-05 22:16:34,666 [Worker-86: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-05 22:16:34,666 [Worker-86: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-05 22:16:34,667 [Worker-86: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-05 22:16:34,679 [Worker-86: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-05 22:16:34,681 [Worker-86: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-05 22:16:34,681 [Worker-86: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-05 22:16:34,681 [Worker-86: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project\src\test\resources
+2022-08-05 22:19:12,423 [Worker-94: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-05 22:19:12,424 [Worker-94: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-05 22:19:12,424 [Worker-94: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-05 22:19:12,428 [Worker-94: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-05 22:19:12,448 [Worker-94: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-05 22:19:12,448 [Worker-94: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-05 22:19:12,448 [Worker-94: Launching ExclusaoCozinhaMain2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project\src\test\resources

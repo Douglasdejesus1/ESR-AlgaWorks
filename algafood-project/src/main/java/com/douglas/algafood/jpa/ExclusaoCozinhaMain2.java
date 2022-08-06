@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContext;
 import com.douglas.algafood.AlgafoodProjectApplication;
 import com.douglas.algafood.domain.model.Cozinha;
 
-public class InclusaoCozinhaMain {
+public class ExclusaoCozinhaMain2 {
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new SpringApplicationBuilder(AlgafoodProjectApplication.class)
 				.web(WebApplicationType.NONE).run(args);
@@ -16,8 +16,8 @@ public class InclusaoCozinhaMain {
 
 		Cozinha cozinha = new Cozinha();
 		cozinha.setId(1L);
+				
 		cadastroCozinha.remover(cozinha);
-		
 
 	}
 
