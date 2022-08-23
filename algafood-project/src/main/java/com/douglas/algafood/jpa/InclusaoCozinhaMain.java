@@ -15,10 +15,17 @@ public class InclusaoCozinhaMain {
 
 		CozinhaRepository cadastroCozinha = applicationContext.getBean(CozinhaRepository.class);
 
-		Cozinha cozinha = new Cozinha();
-		cozinha.setId(1L);
-		cadastroCozinha.remover(cozinha);
+		Cozinha cozinha1 = new Cozinha();
+		cozinha1.setNome("Brasileira");
 		
+		Cozinha cozinha2 = new Cozinha();
+		cozinha2.setNome("Japonesa");
+		
+		cozinha1 = cadastroCozinha.salvar(cozinha1);
+		cozinha2 = cadastroCozinha.salvar(cozinha2);
+		
+		System.out.printf("%d - %s\n", cozinha1.getId(), cozinha1.getNome());
+		System.out.printf("%d - %s\n", cozinha2.getId(), cozinha2.getNome());
 
 	}
 
