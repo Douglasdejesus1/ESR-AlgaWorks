@@ -7,3 +7,6 @@ insert into restaurante (nome, taxa_frete, cozinha_id) values ('Thai Delivery', 
 insert into estado (nome) values ('SAO PAULO');
 insert into estado (nome) values ('RIO GRANDE DO SUL');
 insert into estado (nome) values ('CEARA');
+insert into cidade (nome, estado_id) values ('JUNDIAI',1);
+insert into cidade (nome, estado_id) values ('CAMPO LIMPO PAULISTA',1);
+insert into cidade (nome, estado_id) values ('FORTALIZA',3);

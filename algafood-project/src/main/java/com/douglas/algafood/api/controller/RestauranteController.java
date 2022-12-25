@@ -31,7 +31,7 @@ public class RestauranteController {
 	private CadastroRestauranteService cadastroRestaurante;
 
 	@GetMapping
-	public List<Restaurante> lista(){
+	public List<Restaurante> listar(){
 		return restauranteRepository.listar(); 
 	}
 	
