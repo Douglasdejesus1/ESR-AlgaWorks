@@ -6,13 +6,13 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.douglas.algafood.domain.model.Cozinha;
 import com.douglas.algafood.domain.repository.CozinhaRepository;
 
-@Component
+@Repository
 public class CozinhaRepositoryImpl implements CozinhaRepository {
 
 	@PersistenceContext
@@ -23,7 +23,17 @@ public class CozinhaRepositoryImpl implements CozinhaRepository {
 		return manager.createQuery("from Cozinha", Cozinha.class).getResultList();
 
 	}
-
+	//IMPLANTACAO JPQA PRA BUSCAR POR NOME
+	/*@Override
+	public List<Cozinha> consultarPorNome(String nome) {
+		return manager.createQuery("from Cozinha where nome = :nome", Cozinha.class)
+				.setParameter("nome", nome).getResultList();
+	}*/
+	@Override
+	public List<Cozinha> consultarPorNome(String nome) {
+		return manager.createQuery("from Cozinha where nome like  :nome", Cozinha.class)
+				.setParameter("nome","%"+ nome+"%").getResultList();
+	}
 	@Override
 	public Cozinha buscar(Long id) {
 		return manager.find(Cozinha.class, id);
@@ -46,5 +56,6 @@ public class CozinhaRepositoryImpl implements CozinhaRepository {
 		manager.remove(cozinha);
 
 	}
+
 
 }
