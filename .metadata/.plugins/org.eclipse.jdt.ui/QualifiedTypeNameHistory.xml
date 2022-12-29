@@ -5,7 +5,6 @@
     <fullyQualifiedTypeName name="com.douglas.di.service.AtivacaoClienteService"/>
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="com.douglas.di.service.EmissaoNotaFiscalService"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.douglas.di.notificacao.Notificador"/>
     <fullyQualifiedTypeName name="com.douglas.di.notificacao.NotificadorEmail"/>
     <fullyQualifiedTypeName name="com.douglas.di.notificacao.NotificadorSms"/>
@@ -52,4 +51,9 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.domain.repository.RestauranteRepository"/>
+    <fullyQualifiedTypeName name="com.douglas.algafood.domain.repository.RestauranteRepositoryQueries"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
+    <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
 </qualifiedTypeNameHistroy>
