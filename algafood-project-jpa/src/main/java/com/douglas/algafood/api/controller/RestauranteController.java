@@ -36,6 +36,7 @@ public class RestauranteController {
 	@Autowired
 	private CadastroRestauranteService cadastroRestaurante;
 
+	
 	@GetMapping
 	public List<Restaurante> listar() {
 		return restauranteRepository.findAll();
@@ -75,7 +76,7 @@ public class RestauranteController {
 			Optional<Restaurante> restauranteAtual = restauranteRepository.findById(restauranteId);
 
 			if (restauranteAtual.isPresent()) {
-				BeanUtils.copyProperties(restaurante, restauranteAtual, "id");
+				BeanUtils.copyProperties(restaurante, restauranteAtual, "id","formasPagamento","endereco");
 				Restaurante restauranteSalvo = cadastroRestaurante.salvar(restauranteAtual.get());
 				return ResponseEntity.ok(restauranteSalvo);
 			}
