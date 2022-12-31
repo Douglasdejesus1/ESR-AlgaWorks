@@ -10,9 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -35,6 +32,7 @@ public class Restaurante {
 	
 	//OnDelete permite excluir classes associadas a outras classes
 	//@OnDelete(action = OnDeleteAction.CASCADE)
+	//@JsonIgnore para listar os restaurantes vinculados, tiro o ignore da cozinha e mando pra ca
 	@ManyToOne
 	@JoinColumn(name = "cozinha_id", nullable = false)
 	private Cozinha cozinha;
