@@ -1,5 +1,8 @@
 package com.douglas.algafood.api.controller;
 
+import static com.douglas.algafood.infrastructure.repository.spec.RestauranteSpecs.comFreteGratis;
+import static com.douglas.algafood.infrastructure.repository.spec.RestauranteSpecs.comNomeSemelhante;
+
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
@@ -13,6 +16,8 @@ import com.douglas.algafood.domain.model.Cozinha;
 import com.douglas.algafood.domain.model.Restaurante;
 import com.douglas.algafood.domain.repository.CozinhaRepository;
 import com.douglas.algafood.domain.repository.RestauranteRepository;
+import com.douglas.algafood.domain.repository.RestauranteRepositoryQueries;
+import com.douglas.algafood.infrastructure.repository.spec.RestauranteSpecs;
 
 @RestController
 @RequestMapping("/teste")
@@ -61,5 +66,15 @@ public class TesteController {
 	@GetMapping("/cozinhas/existe-nome")
 	public boolean ExistecozinhaPorNome(String nome) {
 		return cozinhaRepository.existsByNome(nome);
+	}
+	
+	@GetMapping("/restaurantes/com-frete-gratis")
+	public List<Restaurante> restaurantesComFreteGratis(String nome){
+		return restauranteRepository.findComFreteGratis(nome);
+	}
+	
+	@GetMapping("/restaurantes/primeiro")
+	public Optional<Restaurante> restaurantePrimeiro(){
+		return restauranteRepository.buscarPrimeiro();
 	}
 }

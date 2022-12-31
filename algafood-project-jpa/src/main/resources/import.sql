@@ -4,6 +4,8 @@ insert into restaurante (nome, taxa_frete, cozinha_id) values ('RestauranteDaFaz
 insert into restaurante (nome, taxa_frete, cozinha_id) values ('BomPrato',2.5,2);
 insert into restaurante (nome, taxa_frete, cozinha_id) values ('Thai Gourmet', 10,1);
 insert into restaurante (nome, taxa_frete, cozinha_id) values ('Thai Delivery', 9.50,1);
+insert into restaurante (nome, taxa_frete, cozinha_id) values ('Douglas Gourmet', 0,1);
+insert into restaurante (nome, taxa_frete, cozinha_id) values ('Flavia Delivery', 0,2);
 insert into estado (nome) values ('SAO PAULO');
 insert into estado (nome) values ('RIO GRANDE DO SUL');
 insert into estado (nome) values ('CEARA');
