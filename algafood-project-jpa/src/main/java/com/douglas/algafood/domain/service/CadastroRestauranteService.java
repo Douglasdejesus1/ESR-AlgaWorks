@@ -22,6 +22,9 @@ public class CadastroRestauranteService {
 	
 	@Autowired
 	private CozinhaRepository cozinhaRepository;
+	
+	@Autowired
+	private CadastroCozinhaService cadastroCozinhaService;
 	/*
 	public Restaurante salvar(Restaurante restarante) {
 		return restauranteRepository.salvar(restarante);
@@ -29,9 +32,7 @@ public class CadastroRestauranteService {
 	*/
 	public Restaurante salvar(Restaurante restaurante) {
 		Long cozinhaId = restaurante.getCozinha().getId();
-		Cozinha cozinha = cozinhaRepository.findById(cozinhaId).orElseThrow(()-> 
-		new EntidadeNaoEncontradaException(
-				String.format(MSG_COZINHA_NAO_ENCONTRADA, cozinhaId)));
+		Cozinha cozinha = cadastroCozinhaService.buscarOuFalhar(cozinhaId);
 		
 		restaurante.setCozinha(cozinha);
 		return restauranteRepository.save(restaurante);

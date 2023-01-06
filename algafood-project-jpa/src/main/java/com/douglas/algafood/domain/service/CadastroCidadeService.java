@@ -24,15 +24,15 @@ public class CadastroCidadeService {
 	@Autowired
 	private CidadeRepository cidadeRepository;
 	
+	@Autowired
+	private CadastroEstadoService cadastroEstadoService;
+	
 	public Cidade salvar(Cidade cidade) {
 		Long estadoId = cidade.getEstado().getId();
-		Optional<Estado> estado = estadoRepository.findById(estadoId);
+		Estado estado = cadastroEstadoService.buscarOuFalhar(estadoId);
 		
-		if(estado.isEmpty()) {
-			throw new EntidadeNaoEncontradaException(
-					String.format(MSG_ESTADO_NAO_ESCONTRADO, estadoId));
-		}
-		cidade.setEstado(estado.get());
+		
+		cidade.setEstado(estado);
 		return cidadeRepository.save(cidade);
 	}
 
@@ -46,6 +46,7 @@ public class CadastroCidadeService {
 	}
 	public Cidade buscarOuFalar(Long cidadeId) {
 		return cidadeRepository.findById(cidadeId).orElseThrow(()->
-		new EntidadeNaoEncontradaException(String.format(MSG_CIDADE_NAO_ENCONTRADA, cidadeId)));
+		new EntidadeNaoEncontradaException
+		(String.format(MSG_CIDADE_NAO_ENCONTRADA, cidadeId)));
 	}
 }

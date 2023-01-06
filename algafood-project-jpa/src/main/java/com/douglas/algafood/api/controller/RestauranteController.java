@@ -20,8 +20,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
+import com.douglas.algafood.domain.exception.NegocioException;
 import com.douglas.algafood.domain.model.Restaurante;
 import com.douglas.algafood.domain.repository.RestauranteRepository;
+import com.douglas.algafood.domain.service.CadastroCozinhaService;
 import com.douglas.algafood.domain.service.CadastroRestauranteService;
 
 @RestController
@@ -56,8 +58,12 @@ public class RestauranteController {
 	@ResponseStatus(HttpStatus.CREATED)
 	@PostMapping
 	public Restaurante adicionar(@RequestBody Restaurante restaurante) {
-		return  cadastroRestaurante.salvar(restaurante);
-		
+		try {
+			return cadastroRestaurante.salvar(restaurante);
+		} catch (EntidadeNaoEncontradaException e) {
+			throw new NegocioException(e.getMessage());
+		}
+
 	}
 
 	// PUT
@@ -66,9 +72,13 @@ public class RestauranteController {
 		Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
 
 		BeanUtils.copyProperties(restaurante, restauranteAtual, "id", "formasPagamento", "endereco","dataCadastro");
+		try {
 		return cadastroRestaurante.salvar(restauranteAtual);
-
+	} catch (EntidadeNaoEncontradaException e) {
+		throw new NegocioException(e.getMessage());
 	}
+
+}
 
 	// DELETE
 	@ResponseStatus(value = HttpStatus.NO_CONTENT)
