@@ -14,6 +14,8 @@ import com.douglas.algafood.domain.repository.EstadoRepository;
 @Service
 public class CadastroEstadoService {
 
+	private static final String MSG_ESTADO_EM_USO = "ID %d está em uso em outra entidade";
+	private static final String MSG_ESTADO_NAO_ENCONTRADO = "Não existe um cadastro de estado com código %d";
 	@Autowired
 	private EstadoRepository estadoRepository;
 
@@ -26,12 +28,16 @@ public class CadastroEstadoService {
 		try {
 			estadoRepository.deleteById(estadoId);
 		} catch (EmptyResultDataAccessException e) {
-			throw new EntidadeNaoEncontradaException(String.format("ID %d esta vazio", estadoId));
+			throw new EntidadeNaoEncontradaException(String.format(MSG_ESTADO_NAO_ENCONTRADO, estadoId));
 
 		} catch (DataIntegrityViolationException e) {
-			throw new EntidadeEmUsoException(String.format("ID %d está em uso em outra entidade", estadoId));
+			throw new EntidadeEmUsoException(String.format(MSG_ESTADO_EM_USO, estadoId));
 		}
 
 	}
-
+	public Estado  buscarOuFalhar(Long estadoId) {
+		return estadoRepository.findById(estadoId)
+				.orElseThrow(()->new EntidadeNaoEncontradaException(String.format(MSG_ESTADO_NAO_ENCONTRADO, estadoId)));
+	}
+	
 }

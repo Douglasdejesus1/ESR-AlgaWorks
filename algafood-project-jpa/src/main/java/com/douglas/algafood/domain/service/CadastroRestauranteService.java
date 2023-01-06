@@ -1,7 +1,5 @@
 package com.douglas.algafood.domain.service;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
@@ -15,6 +13,10 @@ import com.douglas.algafood.domain.repository.RestauranteRepository;
 @Service
 public class CadastroRestauranteService {
 
+	private static final String MSG_COZINHA_NAO_ENCONTRADA = "Cozinha com Id %d não existe no banco de dados";
+
+	private static final String MSG_RESTAURANTE_NAO_ENCONTRADO = "Não existe um cadastro de restaurante com código %d";
+
 	@Autowired 
 	private RestauranteRepository restauranteRepository;
 	
@@ -27,8 +29,9 @@ public class CadastroRestauranteService {
 	*/
 	public Restaurante salvar(Restaurante restaurante) {
 		Long cozinhaId = restaurante.getCozinha().getId();
-		Cozinha cozinha = cozinhaRepository.findById(cozinhaId).orElseThrow(()-> new EntidadeNaoEncontradaException(
-				String.format("Cozinha com Id %d não existe no banco de dados", cozinhaId)));
+		Cozinha cozinha = cozinhaRepository.findById(cozinhaId).orElseThrow(()-> 
+		new EntidadeNaoEncontradaException(
+				String.format(MSG_COZINHA_NAO_ENCONTRADA, cozinhaId)));
 		
 		restaurante.setCozinha(cozinha);
 		return restauranteRepository.save(restaurante);
@@ -49,11 +52,18 @@ public class CadastroRestauranteService {
 	public void excluir(Long restauranteId) {
 		try {
 			restauranteRepository.deleteById(restauranteId);
-			}catch(EmptyResultDataAccessException e) {
-				throw new EntidadeNaoEncontradaException(String.format("ID %d esta vazio",restauranteId));
-			}
+		} catch (EmptyResultDataAccessException e) {
+			throw new EntidadeNaoEncontradaException(String
+					.format(MSG_RESTAURANTE_NAO_ENCONTRADO, restauranteId));
+		}
 	}
 
 	
-	
+
+	public Restaurante buscarOuFalhar(Long restauranteId) {
+		return restauranteRepository.findById(restauranteId).orElseThrow(
+				() -> new EntidadeNaoEncontradaException(String
+						.format(MSG_RESTAURANTE_NAO_ENCONTRADO, restauranteId)));
+
+	}
 }
