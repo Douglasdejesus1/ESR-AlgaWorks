@@ -12,7 +12,7 @@ public class RestauranteNaoEncontradoException extends EntidadeNaoEncontradaExce
 	public RestauranteNaoEncontradoException(String msg) {
 		super(msg);
 	}
-	public RestauranteNaoEncontradoException(Long empresaId) {
-		this(String.format("Empresa com Id %d não existe no banco de dados",empresaId));
+	public RestauranteNaoEncontradoException(Long restauranteId) {
+		this(String.format("Restaurante com Id %d não existe no banco de dados",restauranteId));
 	}
 }
