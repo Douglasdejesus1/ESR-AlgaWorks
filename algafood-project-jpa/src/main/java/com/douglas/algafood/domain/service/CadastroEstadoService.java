@@ -7,15 +7,15 @@ import org.springframework.stereotype.Service;
 
 import com.douglas.algafood.domain.exception.EntidadeEmUsoException;
 import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
+import com.douglas.algafood.domain.exception.RestauranteNaoEncontradoException;
 import com.douglas.algafood.domain.model.Estado;
-import com.douglas.algafood.domain.repository.CidadeRepository;
 import com.douglas.algafood.domain.repository.EstadoRepository;
 
 @Service
 public class CadastroEstadoService {
 
 	private static final String MSG_ESTADO_EM_USO = "ID %d está em uso em outra entidade";
-	private static final String MSG_ESTADO_NAO_ENCONTRADO = "Não existe um cadastro de estado com código %d";
+	//private static final String MSG_ESTADO_NAO_ENCONTRADO = "Não existe um cadastro de estado com código %d";
 	@Autowired
 	private EstadoRepository estadoRepository;
 
@@ -28,7 +28,7 @@ public class CadastroEstadoService {
 		try {
 			estadoRepository.deleteById(estadoId);
 		} catch (EmptyResultDataAccessException e) {
-			throw new EntidadeNaoEncontradaException(String.format(MSG_ESTADO_NAO_ENCONTRADO, estadoId));
+			throw new RestauranteNaoEncontradoException(estadoId);
 
 		} catch (DataIntegrityViolationException e) {
 			throw new EntidadeEmUsoException(String.format(MSG_ESTADO_EM_USO, estadoId));
@@ -37,7 +37,7 @@ public class CadastroEstadoService {
 	}
 	public Estado  buscarOuFalhar(Long estadoId) {
 		return estadoRepository.findById(estadoId)
-				.orElseThrow(()->new EntidadeNaoEncontradaException(String.format(MSG_ESTADO_NAO_ENCONTRADO, estadoId)));
+				.orElseThrow(()->new RestauranteNaoEncontradoException(estadoId));
 	}
 	
 }

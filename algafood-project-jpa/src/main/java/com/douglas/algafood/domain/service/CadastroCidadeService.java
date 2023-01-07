@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
+import com.douglas.algafood.domain.exception.CidadeNaoEncontradaException;
 import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.douglas.algafood.domain.model.Cidade;
 import com.douglas.algafood.domain.model.Estado;
@@ -40,13 +41,12 @@ public class CadastroCidadeService {
 		try {
 			cidadeRepository.deleteById(cidadeId);
 		}catch(EmptyResultDataAccessException e){
-			throw new EntidadeNaoEncontradaException(String.format(MSG_CIDADE_NAO_ENCONTRADA, cidadeId));
+			throw new CidadeNaoEncontradaException(cidadeId);
 			
 		}
 	}
 	public Cidade buscarOuFalar(Long cidadeId) {
 		return cidadeRepository.findById(cidadeId).orElseThrow(()->
-		new EntidadeNaoEncontradaException
-		(String.format(MSG_CIDADE_NAO_ENCONTRADA, cidadeId)));
+		new CidadeNaoEncontradaException(cidadeId));
 	}
 }
