@@ -1,17 +1,12 @@
 package com.douglas.algafood.api.exceptionhandler;
 
-import java.time.LocalDateTime;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.lang.Nullable;
-import org.springframework.web.HttpMediaTypeNotSupportedException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import org.springframework.web.util.WebUtils;
 
 import com.douglas.algafood.domain.exception.EntidadeEmUsoException;
 import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
@@ -22,8 +17,21 @@ public class ApiExceptionHandler  extends ResponseEntityExceptionHandler{
 	
 	@ExceptionHandler(EntidadeNaoEncontradaException.class)
 	public ResponseEntity<?> tratarEntidadeNaoEncontradaException(EntidadeNaoEncontradaException ex, WebRequest request) {
-
-		return super.handleExceptionInternal(ex, ex.getMessage(), new HttpHeaders(), 
+		HttpStatus status = HttpStatus.NOT_FOUND;
+		ProblemType problemType = ProblemType.ENTIDADE_NAO_ENCONTRADA;
+		String detail = ex.getMessage();
+		
+		Problem problem = createProblemBuilder(status, problemType, detail).build();
+		
+		
+		
+		/*Problem problem = Problem.builder()
+				.status(status.value())
+				.type("https://algafood.com.br/entidade-nao-encontrada")
+				.title("Entidade não econtrada")
+				.detail(detail)
+				.build();*/
+		return super.handleExceptionInternal(ex, problem, new HttpHeaders(), 
 				HttpStatus.NOT_FOUND, request);
 	}
 
@@ -44,15 +52,15 @@ public class ApiExceptionHandler  extends ResponseEntityExceptionHandler{
 	protected ResponseEntity<Object> handleExceptionInternal(
 			Exception ex, Object body, HttpHeaders headers, HttpStatus status, WebRequest request) {
 		if(body==null) {
-		body = Problema.builder()
-				.dataHora(LocalDateTime.now())
-				.mensagem(status.getReasonPhrase())
+		body = Problem.builder()
+				.status(status.value())
+				.title(status.getReasonPhrase())
 				.build();
 		}
 		else if(body instanceof String){
-			body = Problema.builder()
-					.dataHora(LocalDateTime.now())
-					.mensagem((String) body)
+			body = Problem.builder()
+					.status(status.value())
+					.title((String) body)
 					.build();
 		}
 		
@@ -66,6 +74,17 @@ public class ApiExceptionHandler  extends ResponseEntityExceptionHandler{
 		return ResponseEntity.status(HttpStatus.UNSUPPORTED_MEDIA_TYPE).body(problema);
 	} JA FAZ PARTE DA ResponseEntityExceptionHandler*/
 	
+	private Problem.ProblemBuilder createProblemBuilder(HttpStatus status, 
+			ProblemType problemType, String detail) {
+		
+		return Problem.builder()
+				.status(status.value())
+				.type(problemType.getUri())
+				.title(problemType.getTitle())
+				.detail(detail);
+		
+		
+	}
 	
 
 }
