@@ -24,7 +24,7 @@
 	</section>
 	<section name="completion_proposal_size">
 		<item key="size.x" value="538"/>
-		<item key="size.y" value="297"/>
+		<item key="size.y" value="296"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
@@ -119,5 +119,7 @@
 		<item key="DIALOG_WIDTH" value="678"/>
 		<item key="DIALOG_HEIGHT" value="806"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 </section>

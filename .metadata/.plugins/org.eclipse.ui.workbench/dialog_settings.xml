@@ -12,20 +12,20 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
-			<item value="org.eclipse.jdt.ui.preferences.CodeAssistPreferenceFavorites"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.generate.constructor.using.fields"/>
+			<item value="org.eclipse.jdt.ui.preferences.CodeAssistPreferenceFavorites"/>
 		</list>
 		<list key="orderedProviders">
-			<item value="org.eclipse.ui.preferences"/>
 			<item value="org.eclipse.ui.commands"/>
+			<item value="org.eclipse.ui.preferences"/>
 		</list>
 		<list key="textEntries">
 			<item value="1"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="favorites"/>
 			<item value="cons"/>
+			<item value="favorites"/>
 		</list>
 	</section>
 </section>
