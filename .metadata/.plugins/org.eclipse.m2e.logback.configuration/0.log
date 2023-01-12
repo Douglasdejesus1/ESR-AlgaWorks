@@ -7719,3 +7719,19 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2023-01-11 23:03:16,779 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-01-11 23:03:16,779 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2023-01-11 23:03:16,791 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-11 23:03:16,798 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2023-01-11 23:03:16,814 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-11 23:03:16,815 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-11 23:03:16,815 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-jpa\src\test\resources
+2023-01-11 23:11:03,548 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-11 23:11:03,548 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-11 23:11:03,549 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-11 23:11:03,563 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2023-01-11 23:11:03,565 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-11 23:11:03,566 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-11 23:11:03,566 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-jpa\src\test\resources
+2023-01-11 23:12:32,922 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-11 23:12:32,922 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-11 23:12:32,923 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-11 23:12:32,932 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2023-01-11 23:12:32,936 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

@@ -8,7 +8,6 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,6 +16,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -24,7 +24,6 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -51,6 +50,8 @@ public class Restaurante {
 	//@OnDelete(action = OnDeleteAction.CASCADE)
 //	@JsonIgnore //para listar os restaurantes vinculados, tiro o ignore da cozinha e mando pra ca
 	//@JsonIgnoreProperties("hibernateLazyInitializer")
+	@Valid
+	@NotNull
 	@ManyToOne //(fetch=FetchType.LAZY)
 	@JoinColumn(name = "cozinha_id", nullable = false)
 	private Cozinha cozinha;
