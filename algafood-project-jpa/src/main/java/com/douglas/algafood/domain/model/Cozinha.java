@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 //@JsonRootName("Origem")
+
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
