@@ -27,6 +27,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import com.douglas.algafood.core.validation.Groups;
+import com.douglas.algafood.core.validation.TaxaFrete;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
@@ -47,7 +48,8 @@ public class Restaurante {
 	@Column(nullable = false)
 	private String nome;
 
-	@PositiveOrZero
+	//@PositiveOrZero uso no lugar, a titulo de exemplo:
+	@TaxaFrete
 	@Column(name = "taxa_frete", nullable = false)
 	private BigDecimal taxaFrete;
 	
