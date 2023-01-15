@@ -26,8 +26,8 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import com.douglas.algafood.core.validation.Groups;
-import com.douglas.algafood.core.validation.Multiplo;
 import com.douglas.algafood.core.validation.TaxaFrete;
+import com.douglas.algafood.core.validation.ValorZeroIncluiDescricao;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
@@ -36,7 +36,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-
+@ValorZeroIncluiDescricao(valorField="taxaFrete", descricaoField="nome", descricaoObrigatoria = "Frete Grátis")
 public class Restaurante {
 
 	@EqualsAndHashCode.Include
@@ -50,7 +50,7 @@ public class Restaurante {
 
 	//@PositiveOrZero uso no lugar, a titulo de exemplo:
 	@TaxaFrete
-	@Multiplo(numero = 5)
+	//@Multiplo(numero = 5)
 	@Column(name = "taxa_frete", nullable = false)
 	private BigDecimal taxaFrete;
 	
