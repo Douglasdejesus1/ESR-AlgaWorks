@@ -8501,3 +8501,69 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2023-01-15 18:10:58,052 [Worker-175: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-01-15 18:10:58,052 [Worker-175: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2023-01-15 18:10:58,052 [Worker-175: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-jpa\src\test\resources
+2023-01-15 18:12:38,822 [Worker-173: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.douglas:algafood-project:0.0.1-SNAPSHOT @ C:\Temp\ESR\algafood-project-testes-integracao\pom.xml.
+2023-01-15 18:12:40,651 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 18:12:40,651 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 18:12:40,652 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-15 18:12:40,653 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-01-15 18:12:40,676 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 18:12:40,676 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 18:12:40,676 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-testes-integracao\src\test\resources
+2023-01-15 18:12:42,360 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 18:12:42,360 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 18:12:42,362 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-15 18:12:42,366 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-01-15 18:12:42,388 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 18:12:42,388 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 18:12:42,388 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-testes-integracao\src\test\resources
+2023-01-15 19:31:08,823 [Worker-178: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.8.2/junit-platform-launcher-1.8.2.jar
+2023-01-15 19:31:09,269 [Worker-178: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.8.2/junit-platform-launcher-1.8.2.jar
+2023-01-15 19:41:18,752 [Worker-179: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:41:18,752 [Worker-179: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:41:18,752 [Worker-179: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:41:18,753 [Worker-179: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:41:18,754 [Worker-179: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:41:18,754 [Worker-179: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:41:18,754 [Worker-179: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-testes-integracao\src\test\resources
+2023-01-15 19:42:46,267 [Worker-183: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:42:46,267 [Worker-183: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:42:46,267 [Worker-183: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:42:46,267 [Worker-183: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:42:46,269 [Worker-183: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:42:46,269 [Worker-183: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:42:46,269 [Worker-183: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-testes-integracao\src\test\resources
+2023-01-15 19:43:05,062 [Worker-186: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:43:05,062 [Worker-186: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:43:05,062 [Worker-186: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:43:05,062 [Worker-186: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:43:05,064 [Worker-186: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:43:05,064 [Worker-186: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:43:05,064 [Worker-186: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-testes-integracao\src\test\resources
+2023-01-15 19:45:48,954 [Worker-188: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:45:48,954 [Worker-188: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:45:48,954 [Worker-188: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:45:48,954 [Worker-188: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:45:48,956 [Worker-188: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:45:48,956 [Worker-188: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:45:48,956 [Worker-188: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-testes-integracao\src\test\resources
+2023-01-15 19:45:56,526 [Worker-189: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:45:56,526 [Worker-189: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:45:56,526 [Worker-189: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:45:56,526 [Worker-189: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:45:56,527 [Worker-189: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:45:56,527 [Worker-189: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:45:56,527 [Worker-189: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-testes-integracao\src\test\resources
+2023-01-15 19:48:48,621 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:48:48,621 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:48:48,621 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:48:48,621 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:48:48,622 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:48:48,622 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:48:48,622 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-testes-integracao\src\test\resources
+2023-01-15 19:49:03,147 [Worker-187: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:49:03,147 [Worker-187: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:49:03,147 [Worker-187: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:49:03,147 [Worker-187: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-15 19:49:03,148 [Worker-187: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-15 19:49:03,148 [Worker-187: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-15 19:49:03,148 [Worker-187: Launching AlgafoodProjectApplicationTests] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Temp\ESR\algafood-project-testes-integracao\src\test\resources
