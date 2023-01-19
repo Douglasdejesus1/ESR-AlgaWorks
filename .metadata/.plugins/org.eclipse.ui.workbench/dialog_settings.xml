@@ -32,4 +32,6 @@
 			<item value="favorites"/>
 		</list>
 	</section>
+	<section name="PreferencesExportWizard">
+	</section>
 </section>

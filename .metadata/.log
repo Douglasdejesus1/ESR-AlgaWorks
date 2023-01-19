@@ -5507,3 +5507,920 @@ Caused by: java.net.UnknownHostException: repo.maven.apache.org
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:09:04.509
 !MESSAGE executing callback sts4.classpath.zWssIgfj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:12:49.279
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zWssIgfj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:12:49.279
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.zWssIgfj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:12:49.280
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:12:49.280
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zWssIgfj => OK
+!SESSION 2023-01-18 22:12:54.180 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2023-01-18 22:13:39.489
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-18 22:13:39.489
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@57617a75,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3794b7b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-18 22:13:39.489
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3225d950,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1be427b4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:45.864
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:45.865
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@117d1c06[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:45.875
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:46.101
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-18 22:13:47.548
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Douglas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:52.560
+!MESSAGE Boot LS startup time from start to initialized: 6673ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.238
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vnsmlRJcisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.242
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.245
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.246
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.247
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.247
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vnsmlRJc => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.256
+!MESSAGE classpath=122 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.260
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.261
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.265
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.268
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-api false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.269
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.274
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.277
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.277
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.281
+!MESSAGE classpath=99 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.284
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-jpa false 99
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.285
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.286
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.286
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc exempo-di false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.287
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 5 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:13:53.966
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-01-18 22:13:53.972
+!MESSAGE An internal error occurred during: "Classpath Notiifcation Post Processing".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.texteditor.ITextEditor.getAdapter(java.lang.Class)" because "this.sourcePage" is null
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.getAdapter(MavenPomEditor.java:949)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:77)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:14:35.214
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:14:35.222
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:14:35.225
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:14:35.227
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:14:35.262
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:15:19.135
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:15:19.139
+!MESSAGE classpath=122 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:15:19.142
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:15:19.143
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:15:19.160
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:12.335
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:12.341
+!MESSAGE classpath=123 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:12.344
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:12.344
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:12.361
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:14.526
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:14.530
+!MESSAGE classpath=123 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:14.533
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:14.534
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:16:14.553
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:17:15.738
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:17:15.743
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:17:15.746
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:17:15.747
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:17:15.762
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:19:07.310
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:19:07.315
+!MESSAGE classpath=123 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:19:07.318
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:19:07.319
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:19:07.335
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2023-01-18 22:19:54.008
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:20:05.327
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:20:05.331
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:20:05.334
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:20:05.335
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:20:05.361
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:24:01.921
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:24:01.925
+!MESSAGE classpath=123 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:24:01.929
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:24:01.929
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:24:01.943
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:22.572
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:22.586
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:22.589
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:22.589
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:22.620
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:47.997
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:48.000
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:48.003
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:48.004
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:28:48.029
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:31:11.854
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:31:11.858
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:31:11.860
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:31:11.860
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:31:11.875
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-01-18 22:32:54.403
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:37:56.808
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:37:56.812
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:37:56.814
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:37:56.814
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:37:56.826
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:27.005
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:27.008
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:27.010
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:27.011
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:27.032
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:54.376
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:54.380
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:54.383
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:54.383
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:39:54.396
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:30.827
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:30.830
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:30.832
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:30.833
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:30.845
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:34.572
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:34.576
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:34.579
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:34.579
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:42:34.594
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:44:44.065
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:44:44.080
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:44:44.083
+!MESSAGE buffering callback sts4.classpath.vnsmlRJc algafood-project-testes-integracao false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:44:44.083
+!MESSAGE executing callback sts4.classpath.vnsmlRJc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:44:44.100
+!MESSAGE executing callback sts4.classpath.vnsmlRJc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:45:11.350
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.vnsmlRJc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:45:11.351
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.vnsmlRJc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:45:11.351
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:45:11.351
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.vnsmlRJc => OK
+!SESSION 2023-01-18 22:45:17.112 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2023-01-18 22:45:22.327
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-18 22:45:22.327
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@65698020,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@57617a75,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-18 22:45:22.327
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3794b7b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3225d950,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-18 22:45:25.848
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Douglas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:47.860
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:47.861
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6a73f164[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:47.862
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:47.882
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.571
+!MESSAGE Boot LS startup time from start to initialized: 1703ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.672
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.OlNSwyHEisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.674
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.676
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.677
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.677
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.678
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.OlNSwyHE => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.684
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.688
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project-testes-integracao false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.688
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.693
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.696
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-api false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.697
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.701
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.704
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.705
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.709
+!MESSAGE classpath=99 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.712
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project-jpa false 99
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.713
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.714
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.715
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE exempo-di false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:49.716
+!MESSAGE executing callback sts4.classpath.OlNSwyHE 5 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 22:49:50.081
+!MESSAGE executing callback sts4.classpath.OlNSwyHE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:01:45.501
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:01:45.511
+!MESSAGE classpath=72 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:01:45.514
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project-testes-integracao false 72
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:01:45.514
+!MESSAGE executing callback sts4.classpath.OlNSwyHE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:01:45.527
+!MESSAGE executing callback sts4.classpath.OlNSwyHE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:02:05.953
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:02:05.955
+!MESSAGE classpath=74 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:02:05.957
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project-testes-integracao false 74
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:02:05.957
+!MESSAGE executing callback sts4.classpath.OlNSwyHE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:02:05.968
+!MESSAGE executing callback sts4.classpath.OlNSwyHE SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2023-01-18 23:03:22.009
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:08:17.978
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:08:17.982
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:08:17.985
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project-testes-integracao false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:08:17.986
+!MESSAGE executing callback sts4.classpath.OlNSwyHE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:08:18.009
+!MESSAGE executing callback sts4.classpath.OlNSwyHE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:10:21.189
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:10:21.191
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:10:21.193
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project-testes-integracao false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:10:21.194
+!MESSAGE executing callback sts4.classpath.OlNSwyHE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:10:21.206
+!MESSAGE executing callback sts4.classpath.OlNSwyHE SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-01-18 23:10:30.641
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:23.508
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:23.512
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:23.515
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project-testes-integracao false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:23.516
+!MESSAGE executing callback sts4.classpath.OlNSwyHE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:23.534
+!MESSAGE executing callback sts4.classpath.OlNSwyHE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:26.425
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:26.429
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:26.432
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project-testes-integracao false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:26.433
+!MESSAGE executing callback sts4.classpath.OlNSwyHE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:16:26.459
+!MESSAGE executing callback sts4.classpath.OlNSwyHE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:26:09.712
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:26:09.715
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:26:09.718
+!MESSAGE buffering callback sts4.classpath.OlNSwyHE algafood-project-testes-integracao false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:26:09.719
+!MESSAGE executing callback sts4.classpath.OlNSwyHE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:26:09.732
+!MESSAGE executing callback sts4.classpath.OlNSwyHE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:26:45.612
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.OlNSwyHE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:26:45.613
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.OlNSwyHE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:26:45.614
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:26:45.614
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.OlNSwyHE => OK
+!SESSION 2023-01-18 23:28:09.799 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2023-01-18 23:28:27.981
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-18 23:28:27.981
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e72c82a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@aaa7000,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-18 23:28:27.981
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64fba3e6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@58d79479,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:30.505
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:30.506
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@b2be396[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:30.514
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:30.720
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:35.714
+!MESSAGE Boot LS startup time from start to initialized: 5171ms
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-18 23:28:36.092
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Douglas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.921
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GaEQyiFpisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.924
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.927
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.928
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.929
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GaEQyiFp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.931
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.944
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.947
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp algafood-project-testes-integracao false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.949
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.959
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.963
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp algafood-api false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.964
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.970
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.987
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp algafood-project false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:36.988
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:37.018
+!MESSAGE classpath=99 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:37.025
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp algafood-project-jpa false 99
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:37.026
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:37.027
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:37.028
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp exempo-di false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:37.028
+!MESSAGE executing callback sts4.classpath.GaEQyiFp 5 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:28:37.657
+!MESSAGE executing callback sts4.classpath.GaEQyiFp SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2023-01-18 23:28:46.695
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:29:00.727
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:29:00.768
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:29:00.773
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp algafood-project-testes-integracao false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:29:00.774
+!MESSAGE executing callback sts4.classpath.GaEQyiFp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:29:00.796
+!MESSAGE executing callback sts4.classpath.GaEQyiFp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:30:34.270
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:30:34.274
+!MESSAGE classpath=72 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:30:34.276
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp algafood-project-testes-integracao false 72
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:30:34.277
+!MESSAGE executing callback sts4.classpath.GaEQyiFp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:30:34.288
+!MESSAGE executing callback sts4.classpath.GaEQyiFp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:36:27.757
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:36:27.766
+!MESSAGE classpath=72 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:36:27.769
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp algafood-project-testes-integracao false 72
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:36:27.769
+!MESSAGE executing callback sts4.classpath.GaEQyiFp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:36:27.804
+!MESSAGE executing callback sts4.classpath.GaEQyiFp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:37:55.594
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:37:55.598
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:37:55.601
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp algafood-project-testes-integracao false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:37:55.602
+!MESSAGE executing callback sts4.classpath.GaEQyiFp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:37:55.620
+!MESSAGE executing callback sts4.classpath.GaEQyiFp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:45:15.863
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:45:15.867
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:45:15.871
+!MESSAGE buffering callback sts4.classpath.GaEQyiFp algafood-project-testes-integracao false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:45:15.871
+!MESSAGE executing callback sts4.classpath.GaEQyiFp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-18 23:45:15.890
+!MESSAGE executing callback sts4.classpath.GaEQyiFp SUCCESS [done]
