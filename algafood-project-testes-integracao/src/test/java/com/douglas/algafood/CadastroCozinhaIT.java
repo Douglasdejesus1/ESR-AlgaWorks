@@ -17,7 +17,7 @@ import com.douglas.algafood.domain.service.CadastroCozinhaService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CadastroCozinhaIntegrationTests {
+public class CadastroCozinhaIT {
 
 	@Autowired
 	private CadastroCozinhaService cadastroCozinha;
@@ -50,7 +50,7 @@ public class CadastroCozinhaIntegrationTests {
 	
 	@Test(expected = EntidadeNaoEncontradaException.class)
 	public void deveFalhar_QuandoExcluirCozinhaInexistente() {
-		cadastroCozinha.excluir(10L);
+		cadastroCozinha.excluir(1L);
 	}
 
 }
