@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.douglas.algafood.api.exceptionhandler.Problema"/>
-    <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
-    <fullyQualifiedTypeName name="org.springframework.web.context.request.WebRequest"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.annotation.JsonAppend"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonInclude"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonInclude.Include"/>
     <fullyQualifiedTypeName name="javax.net.ssl.SSLEngineResult.Status"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.api.exceptionhandler.Problem.ProblemBuilder"/>
-    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.api.exceptionhandler.ProblemType"/>
     <fullyQualifiedTypeName name="java.lang.Throwable"/>
     <fullyQualifiedTypeName name="org.apache.commons.lang3.exception.ExceptionUtils"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="com.douglas.algafood.domain.model.Cozinha"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.domain.exception.EntidadeEmUsoException"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="org.apache.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.hamcrest.Matcher"/>
+    <fullyQualifiedTypeName name="org.hamcrest.Matchers"/>
 </qualifiedTypeNameHistroy>
