@@ -17992,3 +17992,130 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2023-01-21 16:06:09,866 [Worker-80: Launching CadastroCozinhaIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-01-21 16:06:09,866 [Worker-80: Launching CadastroCozinhaIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2023-01-21 16:06:09,866 [Worker-80: Launching CadastroCozinhaIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:06:09,868 [Worker-80: Launching CadastroCozinhaIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:06:09,869 [Worker-80: Launching CadastroCozinhaIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-01-21 16:25:44,773 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:25:44,774 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:25:44,774 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:25:44,775 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:25:44,775 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:25:47,997 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:25:47,997 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:25:47,997 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:25:47,998 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:25:47,998 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:26:29,940 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:26:29,940 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:26:29,941 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:26:29,941 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:26:29,942 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:26:53,358 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:26:53,358 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:26:53,358 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:26:53,359 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:26:53,359 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:27:23,719 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:27:23,719 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:27:23,720 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:27:23,721 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:27:23,721 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:27:44,621 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:27:44,621 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:27:44,621 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:27:44,623 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:27:44,623 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:27:56,621 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:27:56,621 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:27:56,622 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:27:56,622 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:27:56,623 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:28:24,768 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:28:24,768 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:28:24,768 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:28:24,769 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:28:24,770 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:28:36,295 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:28:36,295 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:28:36,295 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:28:36,297 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:28:36,297 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:28:56,057 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:28:56,057 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:28:56,057 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:28:56,058 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:28:56,058 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:29:23,384 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:29:23,385 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:29:23,385 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:29:23,386 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:29:23,388 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:32:20,486 [Worker-82: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:32:20,487 [Worker-82: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:32:20,487 [Worker-82: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:32:20,488 [Worker-82: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:32:20,489 [Worker-82: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:33:34,302 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:33:34,302 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:33:34,302 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:33:34,304 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:33:34,304 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:36:27,460 [Worker-85: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:36:27,460 [Worker-85: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:36:27,461 [Worker-85: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:36:27,462 [Worker-85: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:36:27,463 [Worker-85: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:37:23,957 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:37:23,957 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:37:23,958 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:37:23,959 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:37:23,959 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:40:13,853 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:40:13,853 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:40:13,854 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:40:13,855 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:40:13,856 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:42:14,865 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:42:14,865 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:42:14,865 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:42:14,866 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:42:14,867 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:42:49,591 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:42:49,591 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:42:49,591 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:42:49,593 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:42:49,595 [Worker-83: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:47:28,484 [Worker-96: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:47:28,484 [Worker-96: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:47:28,484 [Worker-96: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:47:28,485 [Worker-96: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:47:28,486 [Worker-96: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:47:57,718 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:47:57,718 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:47:57,718 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:47:57,719 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:47:57,720 [Worker-80: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:49:00,850 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:49:00,850 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:49:00,850 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:49:00,851 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:49:00,852 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:53:48,031 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:53:48,032 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:53:48,040 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-01-21 16:53:48,041 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:53:48,041 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:54:18,229 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:54:18,230 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:54:18,230 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:54:18,231 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:54:18,232 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:56:35,931 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:56:35,932 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:56:35,932 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-21 16:56:35,933 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:56:35,935 [Worker-104: Launching CadastroRestauranteIT] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-01-21 16:58:22,186 [Worker-100: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:58:22,187 [Worker-100: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-21 16:58:22,189 [Worker-100: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-01-21 16:58:22,191 [Worker-100: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-21 16:58:22,191 [Worker-100: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
