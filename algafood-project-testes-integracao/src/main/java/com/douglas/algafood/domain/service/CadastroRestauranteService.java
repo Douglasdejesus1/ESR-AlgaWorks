@@ -1,8 +1,11 @@
 package com.douglas.algafood.domain.service;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.douglas.algafood.domain.exception.RestauranteNaoEncontradoException;
@@ -31,6 +34,7 @@ public class CadastroRestauranteService {
 		return restauranteRepository.salvar(restarante);
 	}
 	*/
+	@Transactional
 	public Restaurante salvar(Restaurante restaurante) {
 		Long cozinhaId = restaurante.getCozinha().getId();
 		Cozinha cozinha = cadastroCozinhaService.buscarOuFalhar(cozinhaId);
@@ -50,7 +54,7 @@ public class CadastroRestauranteService {
 		restaurante.setCozinha(cozinha.get());
 		return restauranteRepository.salvar(restaurante);
 	}*/
-
+	@Transactional
 	public void excluir(Long restauranteId) {
 		try {
 			restauranteRepository.deleteById(restauranteId);
