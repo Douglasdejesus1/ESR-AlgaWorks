@@ -34,8 +34,8 @@ public class Estado {
 	private String nome;
 	
 	
-	@JsonIgnore
+/*	@JsonIgnore
 	@OneToMany(mappedBy = "estado")
-	private List<Cidade>cidades = new ArrayList<>();
+	private List<Cidade>cidades = new ArrayList<>();*/
 
 }
