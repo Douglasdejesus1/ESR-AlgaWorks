@@ -177,7 +177,6 @@ INDEX VERSION 1.131+C:\Temp\ESR\.metadata\.plugins\org.eclipse.jdt.core
 3462070299.index
 405770695.index
 2265565645.index
-2199990938.index
 674561363.index
 3774550261.index
 1343723174.index

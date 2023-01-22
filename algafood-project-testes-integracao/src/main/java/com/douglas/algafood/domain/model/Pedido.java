@@ -17,8 +17,6 @@ import javax.persistence.OneToMany;
 
 import org.hibernate.annotations.CreationTimestamp;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -40,7 +38,7 @@ public class Pedido {
 	@Column(nullable=false)
 	private BigDecimal valorTotal;
 	
-	@JsonIgnore
+	
 	@CreationTimestamp
 	@Column(nullable=false, columnDefinition = "datetime")
 	private LocalDateTime dataCriacao;
