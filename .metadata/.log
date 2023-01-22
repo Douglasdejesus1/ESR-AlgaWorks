@@ -9618,3 +9618,15 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-01-22 09:43:58.161
 !MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-01-22 10:04:13.512
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-01-22 10:04:13.717
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-01-22 10:05:56.796
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-01-22 10:05:57.012
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported

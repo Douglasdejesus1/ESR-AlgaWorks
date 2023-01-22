@@ -30,6 +30,7 @@ import com.douglas.algafood.core.validation.Groups;
 import com.douglas.algafood.core.validation.TaxaFrete;
 import com.douglas.algafood.core.validation.ValorZeroIncluiDescricao;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -62,6 +63,7 @@ public class Restaurante {
 //	@JsonIgnore //para listar os restaurantes vinculados, tiro o ignore da cozinha e mando pra ca
 	//@JsonIgnoreProperties("hibernateLazyInitializer")
 	@Valid
+	@JsonIgnoreProperties(value= "nome", allowGetters = true)
 	@ConvertGroup(from = Default.class, to = Groups.CozinhaId.class)
 	@NotNull
 	@ManyToOne //(fetch=FetchType.LAZY)
