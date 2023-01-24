@@ -3,7 +3,6 @@ package com.douglas.algafood.api.controller;
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +19,6 @@ import org.springframework.validation.BeanPropertyBindingResult;
 import org.springframework.validation.SmartValidator;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -31,9 +29,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.douglas.algafood.api.model.CozinhaModel;
 import com.douglas.algafood.api.model.RestauranteModel;
+import com.douglas.algafood.api.model.input.RestauranteInput;
 import com.douglas.algafood.core.validation.ValidacaoException;
 import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.douglas.algafood.domain.exception.NegocioException;
+import com.douglas.algafood.domain.model.Cozinha;
 import com.douglas.algafood.domain.model.Restaurante;
 import com.douglas.algafood.domain.repository.RestauranteRepository;
 import com.douglas.algafood.domain.service.CadastroRestauranteService;
@@ -77,8 +77,9 @@ public class RestauranteController {
 	 */
 	@ResponseStatus(HttpStatus.CREATED)
 	@PostMapping
-	public RestauranteModel adicionar(@RequestBody @Valid Restaurante restaurante) {
+	public RestauranteModel adicionar(@RequestBody @Valid RestauranteInput restauranteInput) {
 		try {
+			Restaurante restaurante = toDomainObject(restauranteInput);
 			return toModel(cadastroRestaurante.salvar(restaurante));
 		} catch (EntidadeNaoEncontradaException e) {
 			throw new NegocioException(e.getMessage(),e);
@@ -162,6 +163,17 @@ public class RestauranteController {
 			.map(restaurante ->toModel(restaurante))
 			.collect(Collectors.toList());
 		
+	}
+	private Restaurante toDomainObject (RestauranteInput restauranteInput) {
+		Restaurante restaurante = new Restaurante();
+		restaurante.setNome(restauranteInput.getNome());
+		restaurante.setTaxaFrete(restauranteInput.getTaxaFrete());
+		
+		Cozinha cozinha = new Cozinha();
+		cozinha.setId(restauranteInput.getCozinha().getId());
+		restaurante.setCozinha(cozinha);
+
+		return restaurante;
 	}
 
 }
