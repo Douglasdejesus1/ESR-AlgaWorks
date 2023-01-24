@@ -9934,3 +9934,6 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Com
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-01-23 21:32:08.075
 !MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-01-23 21:39:04.160
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported

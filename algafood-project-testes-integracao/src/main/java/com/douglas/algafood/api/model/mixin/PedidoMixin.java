@@ -1,12 +1,12 @@
 package com.douglas.algafood.api.model.mixin;
 
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class PedidoMixin {
 
 	@JsonIgnore
-	private LocalDateTime dataCriacao;
+	private OffsetDateTime dataCriacao;
 
 }
