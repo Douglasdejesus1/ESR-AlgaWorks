@@ -20,6 +20,7 @@ import lombok.Setter;
 public class RestauranteInput {
 	@NotBlank
 	private String nome;
+	
 	@NotNull
 	@PositiveOrZero
 	private BigDecimal taxaFrete;

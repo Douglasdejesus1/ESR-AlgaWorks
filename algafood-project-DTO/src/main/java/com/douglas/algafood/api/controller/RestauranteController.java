@@ -3,13 +3,11 @@ package com.douglas.algafood.api.controller;
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -27,15 +25,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.douglas.algafood.api.assembler.RestauranteInputDisassembler;
 import com.douglas.algafood.api.assembler.RestauranteModelAssembler;
-import com.douglas.algafood.api.assembler.RestauranteModelDisassembler;
-import com.douglas.algafood.api.model.CozinhaModel;
 import com.douglas.algafood.api.model.RestauranteModel;
 import com.douglas.algafood.api.model.input.RestauranteInput;
 import com.douglas.algafood.core.validation.ValidacaoException;
 import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.douglas.algafood.domain.exception.NegocioException;
-import com.douglas.algafood.domain.model.Cozinha;
 import com.douglas.algafood.domain.model.Restaurante;
 import com.douglas.algafood.domain.repository.RestauranteRepository;
 import com.douglas.algafood.domain.service.CadastroRestauranteService;
@@ -58,7 +54,7 @@ public class RestauranteController {
 	private RestauranteModelAssembler restauranteModelAssembler;
 	
 	@Autowired
-	private RestauranteModelDisassembler restauranteModelDisassembler;
+	private RestauranteInputDisassembler restauranteInputDisassembler;
 
 	
 	@GetMapping
@@ -86,7 +82,7 @@ public class RestauranteController {
 	@PostMapping
 	public RestauranteModel adicionar(@RequestBody @Valid RestauranteInput restauranteInput) {
 		try {
-			Restaurante restaurante = restauranteModelDisassembler.toDomainObject(restauranteInput);
+			Restaurante restaurante = restauranteInputDisassembler.toDomainObject(restauranteInput);
 			return restauranteModelAssembler.toModel(cadastroRestaurante.salvar(restaurante));
 		} catch (EntidadeNaoEncontradaException e) {
 			throw new NegocioException(e.getMessage(),e);
@@ -96,10 +92,12 @@ public class RestauranteController {
 
 	// PUT
 	@PutMapping("/{restauranteId}")
-	public RestauranteModel atualizar(@PathVariable Long restauranteId, @Valid @RequestBody Restaurante restaurante) {
+	public RestauranteModel atualizar(@PathVariable Long restauranteId, @Valid @RequestBody RestauranteInput restauranteInput) {
+	//Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
 		Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
-
-		BeanUtils.copyProperties(restaurante, restauranteAtual, "id", "formasPagamento", "endereco","dataCadastro");
+		
+		restauranteInputDisassembler.copyToDomainObject(restauranteInput, restauranteAtual);
+	//	BeanUtils.copyProperties(restaurante, restauranteAtual, "id", "formasPagamento", "endereco","dataCadastro");
 		try {
 		return restauranteModelAssembler.toModel(cadastroRestaurante.salvar(restauranteAtual));
 	} catch (EntidadeNaoEncontradaException e) {

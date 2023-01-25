@@ -7,17 +7,19 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.douglas.algafood.api.model.CozinhaModel;
 import com.douglas.algafood.api.model.RestauranteModel;
 import com.douglas.algafood.domain.model.Restaurante;
 @Component
 public class RestauranteModelAssembler {
 	
 	@Autowired
-	ModelMapper mapper;
+	ModelMapper modelMapper;
 
 	public RestauranteModel toModel(Restaurante restaurante) {
-		CozinhaModel cozinhaModel = new CozinhaModel();
+		
+		return modelMapper.map(restaurante, RestauranteModel.class);
+		
+		/*CozinhaModel cozinhaModel = new CozinhaModel();
 		cozinhaModel.setId(restaurante.getCozinha().getId());
 		cozinhaModel.setNome(restaurante.getCozinha().getNome());
 		
@@ -26,7 +28,7 @@ public class RestauranteModelAssembler {
 		restauranteModel.setNome(restaurante.getNome());
 		restauranteModel.setTaxaFrete(restaurante.getTaxaFrete());
 		restauranteModel.setCozinha(cozinhaModel);
-		return restauranteModel;
+		return restauranteModel;*/
 	}
 	public List<RestauranteModel> toCollectionModel(List<Restaurante> restaurantes){
 		return	restaurantes.stream()
