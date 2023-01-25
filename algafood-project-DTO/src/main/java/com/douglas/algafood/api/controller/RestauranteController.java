@@ -27,6 +27,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.douglas.algafood.api.assembler.RestauranteModelAssembler;
 import com.douglas.algafood.api.model.CozinhaModel;
 import com.douglas.algafood.api.model.RestauranteModel;
 import com.douglas.algafood.api.model.input.RestauranteInput;
@@ -52,18 +53,20 @@ public class RestauranteController {
 	
 	@Autowired
 	private SmartValidator validator;
+	@Autowired
+	private RestauranteModelAssembler restauranteModelAssembler;
 
 	
 	@GetMapping
 	public List<RestauranteModel> listar() {
-		return toCollectionModel(restauranteRepository.findAll());
+		return restauranteModelAssembler.toCollectionModel(restauranteRepository.findAll());
 	}
 
 	@GetMapping("/{restauranteId}")
 	public RestauranteModel buscar(@PathVariable("restauranteId") Long restauranteId) {
 
 		Restaurante restaurante = cadastroRestaurante.buscarOuFalhar(restauranteId);
-		return toModel(restaurante);
+		return restauranteModelAssembler.toModel(restaurante);
 	}
 
 	
@@ -80,7 +83,7 @@ public class RestauranteController {
 	public RestauranteModel adicionar(@RequestBody @Valid RestauranteInput restauranteInput) {
 		try {
 			Restaurante restaurante = toDomainObject(restauranteInput);
-			return toModel(cadastroRestaurante.salvar(restaurante));
+			return restauranteModelAssembler.toModel(cadastroRestaurante.salvar(restaurante));
 		} catch (EntidadeNaoEncontradaException e) {
 			throw new NegocioException(e.getMessage(),e);
 		}
@@ -94,7 +97,7 @@ public class RestauranteController {
 
 		BeanUtils.copyProperties(restaurante, restauranteAtual, "id", "formasPagamento", "endereco","dataCadastro");
 		try {
-		return toModel(cadastroRestaurante.salvar(restauranteAtual));
+		return restauranteModelAssembler.toModel(cadastroRestaurante.salvar(restauranteAtual));
 	} catch (EntidadeNaoEncontradaException e) {
 		throw new NegocioException(e.getMessage(),e);
 	}
@@ -146,24 +149,7 @@ public class RestauranteController {
 			throw new HttpMessageNotReadableException(e.getMessage(),rootCause,serverHttpRequest);
 		}
 	}
-	private RestauranteModel toModel(Restaurante restaurante) {
-		CozinhaModel cozinhaModel = new CozinhaModel();
-		cozinhaModel.setId(restaurante.getCozinha().getId());
-		cozinhaModel.setNome(restaurante.getCozinha().getNome());
-		
-		RestauranteModel restauranteModel =new RestauranteModel();
-		restauranteModel.setId(restaurante.getId());
-		restauranteModel.setNome(restaurante.getNome());
-		restauranteModel.setTaxaFrete(restaurante.getTaxaFrete());
-		restauranteModel.setCozinha(cozinhaModel);
-		return restauranteModel;
-	}
-	private List<RestauranteModel> toCollectionModel(List<Restaurante> restaurantes){
-		return	restaurantes.stream()
-			.map(restaurante ->toModel(restaurante))
-			.collect(Collectors.toList());
-		
-	}
+
 	private Restaurante toDomainObject (RestauranteInput restauranteInput) {
 		Restaurante restaurante = new Restaurante();
 		restaurante.setNome(restauranteInput.getNome());
