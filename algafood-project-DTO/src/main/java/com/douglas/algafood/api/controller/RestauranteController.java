@@ -28,6 +28,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.douglas.algafood.api.assembler.RestauranteModelAssembler;
+import com.douglas.algafood.api.assembler.RestauranteModelDisassembler;
 import com.douglas.algafood.api.model.CozinhaModel;
 import com.douglas.algafood.api.model.RestauranteModel;
 import com.douglas.algafood.api.model.input.RestauranteInput;
@@ -55,6 +56,9 @@ public class RestauranteController {
 	private SmartValidator validator;
 	@Autowired
 	private RestauranteModelAssembler restauranteModelAssembler;
+	
+	@Autowired
+	private RestauranteModelDisassembler restauranteModelDisassembler;
 
 	
 	@GetMapping
@@ -82,7 +86,7 @@ public class RestauranteController {
 	@PostMapping
 	public RestauranteModel adicionar(@RequestBody @Valid RestauranteInput restauranteInput) {
 		try {
-			Restaurante restaurante = toDomainObject(restauranteInput);
+			Restaurante restaurante = restauranteModelDisassembler.toDomainObject(restauranteInput);
 			return restauranteModelAssembler.toModel(cadastroRestaurante.salvar(restaurante));
 		} catch (EntidadeNaoEncontradaException e) {
 			throw new NegocioException(e.getMessage(),e);
@@ -150,16 +154,6 @@ public class RestauranteController {
 		}
 	}
 
-	private Restaurante toDomainObject (RestauranteInput restauranteInput) {
-		Restaurante restaurante = new Restaurante();
-		restaurante.setNome(restauranteInput.getNome());
-		restaurante.setTaxaFrete(restauranteInput.getTaxaFrete());
-		
-		Cozinha cozinha = new Cozinha();
-		cozinha.setId(restauranteInput.getCozinha().getId());
-		restaurante.setCozinha(cozinha);
 
-		return restaurante;
-	}
 
 }
