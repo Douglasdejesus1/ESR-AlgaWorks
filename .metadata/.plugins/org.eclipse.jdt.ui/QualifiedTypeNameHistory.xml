@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.annotation.JsonAppend"/>
-    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonInclude"/>
-    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonInclude.Include"/>
-    <fullyQualifiedTypeName name="javax.net.ssl.SSLEngineResult.Status"/>
-    <fullyQualifiedTypeName name="com.douglas.algafood.api.exceptionhandler.Problem.ProblemBuilder"/>
-    <fullyQualifiedTypeName name="com.douglas.algafood.api.exceptionhandler.ProblemType"/>
-    <fullyQualifiedTypeName name="java.lang.Throwable"/>
-    <fullyQualifiedTypeName name="org.apache.commons.lang3.exception.ExceptionUtils"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.exc.InvalidFormatException"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.api.exceptionhandler.Problem"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.api.exceptionhandler.Problem.Field"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="org.springframework.validation.annotation.Validated"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.Groups.CadastroRestaurante"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.Groups.CozinhaId"/>
@@ -43,13 +33,11 @@
     <fullyQualifiedTypeName name="org.springframework.validation.BeanPropertyBindingResult"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
-    <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="javax.validation.ValidationException"/>
     <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.core.validation.ValidacaoException"/>
     <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringRunner"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.domain.service.CadastroCidadeService"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.douglas.algafood.domain.service.CadastroCozinhaService"/>
     <fullyQualifiedTypeName name="javax.validation.ConstraintViolationException"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="org.hamcrest.Matcher"/>
     <fullyQualifiedTypeName name="org.hamcrest.Matchers"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="com.douglas.algafood.api.model.CidadeModel"/>
+    <fullyQualifiedTypeName name="com.douglas.algafood.api.assembler.CidadeModelAssembler"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.modelmapper.ModelMapper"/>
+    <fullyQualifiedTypeName name="com.douglas.algafood.domain.model.Cidade"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="com.douglas.algafood.api.model.input.CozinhaIdInput"/>
+    <fullyQualifiedTypeName name="com.douglas.algafood.api.model.input.CidadeInput"/>
 </qualifiedTypeNameHistroy>

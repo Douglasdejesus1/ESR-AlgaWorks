@@ -50,6 +50,7 @@ public class RestauranteController {
 	
 	@Autowired
 	private SmartValidator validator;
+	
 	@Autowired
 	private RestauranteModelAssembler restauranteModelAssembler;
 	
@@ -92,7 +93,8 @@ public class RestauranteController {
 
 	// PUT
 	@PutMapping("/{restauranteId}")
-	public RestauranteModel atualizar(@PathVariable Long restauranteId, @Valid @RequestBody RestauranteInput restauranteInput) {
+	public RestauranteModel atualizar(@PathVariable Long restauranteId, @Valid 
+			@RequestBody RestauranteInput restauranteInput) {
 	//Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
 		Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
 		

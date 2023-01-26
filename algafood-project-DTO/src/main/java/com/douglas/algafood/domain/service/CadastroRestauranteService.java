@@ -2,12 +2,14 @@ package com.douglas.algafood.domain.service;
 
 
 
+import javax.validation.ConstraintViolationException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
+import com.douglas.algafood.domain.exception.EntidadeEmUsoException;
 import com.douglas.algafood.domain.exception.RestauranteNaoEncontradoException;
 import com.douglas.algafood.domain.model.Cozinha;
 import com.douglas.algafood.domain.model.Restaurante;
@@ -58,8 +60,11 @@ public class CadastroRestauranteService {
 	public void excluir(Long restauranteId) {
 		try {
 			restauranteRepository.deleteById(restauranteId);
+			restauranteRepository.flush();
 		} catch (EmptyResultDataAccessException e) {
 			throw new RestauranteNaoEncontradoException(restauranteId);
+		} catch (ConstraintViolationException e) {
+			throw new EntidadeEmUsoException(e.getMessage());
 		}
 	}
 
