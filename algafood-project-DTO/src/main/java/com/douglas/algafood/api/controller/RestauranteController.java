@@ -93,20 +93,34 @@ public class RestauranteController {
 
 	// PUT
 	@PutMapping("/{restauranteId}")
-	public RestauranteModel atualizar(@PathVariable Long restauranteId, @Valid 
-			@RequestBody RestauranteInput restauranteInput) {
-	//Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
+	public RestauranteModel atualizar(@PathVariable Long restauranteId,
+			@Valid @RequestBody RestauranteInput restauranteInput) {
+		// Restaurante restauranteAtual =
+		// cadastroRestaurante.buscarOuFalhar(restauranteId);
 		Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
-		
-		restauranteInputDisassembler.copyToDomainObject(restauranteInput, restauranteAtual);
-	//	BeanUtils.copyProperties(restaurante, restauranteAtual, "id", "formasPagamento", "endereco","dataCadastro");
-		try {
-		return restauranteModelAssembler.toModel(cadastroRestaurante.salvar(restauranteAtual));
-	} catch (EntidadeNaoEncontradaException e) {
-		throw new NegocioException(e.getMessage(),e);
-	}
 
-}
+		restauranteInputDisassembler.copyToDomainObject(restauranteInput, restauranteAtual);
+		// BeanUtils.copyProperties(restaurante, restauranteAtual, "id",
+		// "formasPagamento", "endereco","dataCadastro");
+		try {
+			return restauranteModelAssembler.toModel(cadastroRestaurante.salvar(restauranteAtual));
+		} catch (EntidadeNaoEncontradaException e) {
+			throw new NegocioException(e.getMessage(), e);
+		}
+
+	}
+	@PutMapping("/{restauranteId}/ativo")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void ativar(@PathVariable Long restauranteId) {
+		cadastroRestaurante.ativar(restauranteId);
+	}
+	
+	@DeleteMapping("/{restauranteId}/ativo")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void inativar(@PathVariable Long restauranteId) {
+		cadastroRestaurante.inativar(restauranteId);
+	}
+	
 
 	// DELETE
 	@ResponseStatus(value = HttpStatus.NO_CONTENT)
