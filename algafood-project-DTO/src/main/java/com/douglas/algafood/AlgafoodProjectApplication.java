@@ -1,6 +1,5 @@
 package com.douglas.algafood;
 
-import java.sql.Time;
 import java.util.TimeZone;
 
 import org.springframework.boot.SpringApplication;
