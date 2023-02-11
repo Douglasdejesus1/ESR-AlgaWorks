@@ -48,7 +48,7 @@ public class CadastroRestauranteService {
 		Long cozinhaId = restaurante.getCozinha().getId();
 		Long cidadeId = restaurante.getEndereco().getCidade().getId();
 		Cozinha cozinha = cadastroCozinha.buscarOuFalhar(cozinhaId);
-		Cidade cidade = cadastroCidade.buscarOuFalhar(cozinhaId);
+		Cidade cidade = cadastroCidade.buscarOuFalhar(cidadeId);
 		
 		
 		restaurante.setCozinha(cozinha);
@@ -99,7 +99,6 @@ public class CadastroRestauranteService {
 	public void associarFormaPagamento(Long restauranteId, Long formaPagamentoId) {
 		Restaurante restaurante = buscarOuFalhar(restauranteId);
 		FormaPagamento formaPagamento = cadastroFormaPagamento.buscarOuFalhar(formaPagamentoId);
-		
 		restaurante.adicionarFormaPagamento(formaPagamento);
 	}
 	
