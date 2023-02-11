@@ -96,6 +96,16 @@ public class Restaurante {
 	public void inativar() {
 		setAtivo(false);
 	}
+	
+	private boolean aberto = Boolean.FALSE;
+	
+	public void abrir() {
+		setAberto(true);
+	}
+	public void fechar() {
+		setAberto(false);
+	}
+	
 	public boolean adicionarFormaPagamento(FormaPagamento formaPagamento) {
 		return getFormasPagamento().add(formaPagamento);
 	}
