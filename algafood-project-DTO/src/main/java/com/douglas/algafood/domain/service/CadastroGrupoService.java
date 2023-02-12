@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.douglas.algafood.domain.exception.GrupoNaoEncontradoException;
 import com.douglas.algafood.domain.model.Grupo;
+import com.douglas.algafood.domain.model.Permissao;
 import com.douglas.algafood.domain.repository.GrupoRepository;
 
 @Service
@@ -20,6 +21,8 @@ public class CadastroGrupoService {
 
 	@Autowired
 	private GrupoRepository grupoRepository;
+	
+	@Autowired CadastroPermissaoService cadastroPermissao;
 
 	@Transactional
 	public Grupo salvar(Grupo grupo) {
@@ -34,6 +37,32 @@ public class CadastroGrupoService {
 			throw new GrupoNaoEncontradoException(grupoId);
 		}
 	}
+	
+	@Transactional
+	public void desassociarPermissao(Long grupoId, Long permissaoId) {
+		Grupo grupo = buscarOuFalhar(grupoId);
+		Permissao permissao = cadastroPermissao.buscarOuFalhar(permissaoId);
+		grupo.desassociarPermissao(permissao);
+	}
+	@Transactional
+	public void associarPermissao(Long grupoId, Long permissaoId) {
+		Grupo grupo = buscarOuFalhar(grupoId);
+		Permissao permissao = cadastroPermissao.buscarOuFalhar(permissaoId);
+		grupo.adicionarPermissao(permissao);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	public Grupo buscarOuFalhar(Long grupoId) {
 		return grupoRepository.findById(grupoId).orElseThrow(() -> new GrupoNaoEncontradoException(grupoId));
