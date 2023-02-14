@@ -46,6 +46,7 @@ public class Usuario {
 	@JoinTable(name="usuario_grupo",
 			joinColumns =@JoinColumn(name="usuario_id"),
 			inverseJoinColumns = @JoinColumn(name="grupo_id"))
+	
 	private List<Grupo>grupos = new ArrayList<>();
 	
 	public boolean senhaCoincideCom(String senha) {
@@ -55,4 +56,18 @@ public class Usuario {
 	public boolean senhaNaoCoincideCom(String senha) {
 	    return !senhaCoincideCom(senha);
 	}
+	
+	public boolean adicionarGrupo(Grupo grupo) {
+		return getGrupos().add(grupo);
+	}
+	public boolean desassociarGrupo(Grupo grupo) {
+		return getGrupos().remove(grupo);
+	}
+	
+	
+	
+	
+	
+	
+	
 }
