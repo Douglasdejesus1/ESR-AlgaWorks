@@ -15,6 +15,7 @@ import com.douglas.algafood.domain.model.Cidade;
 import com.douglas.algafood.domain.model.Cozinha;
 import com.douglas.algafood.domain.model.FormaPagamento;
 import com.douglas.algafood.domain.model.Restaurante;
+import com.douglas.algafood.domain.model.Usuario;
 import com.douglas.algafood.domain.repository.CozinhaRepository;
 import com.douglas.algafood.domain.repository.RestauranteRepository;
 
@@ -36,8 +37,12 @@ public class CadastroRestauranteService {
 	
 	@Autowired
 	private CadastroCidadeService cadastroCidade;
+	
 	@Autowired
 	private CadastroFormaPagamentoService cadastroFormaPagamento;
+	
+	@Autowired
+	private CadastroUsuarioService cadastroUsuario;
 	/*
 	public Restaurante salvar(Restaurante restarante) {
 		return restauranteRepository.salvar(restarante);
@@ -101,6 +106,24 @@ public class CadastroRestauranteService {
 		FormaPagamento formaPagamento = cadastroFormaPagamento.buscarOuFalhar(formaPagamentoId);
 		restaurante.adicionarFormaPagamento(formaPagamento);
 	}
+	///
+	@Transactional
+	public void desassociarResponsavel(Long restauranteId, Long usuarioId) {
+		Restaurante restaurante = buscarOuFalhar(restauranteId);
+		Usuario usuario = cadastroUsuario.buscarOuFalhar(usuarioId);
+		restaurante.desassociarResponsavel(usuario);
+		
+		
+	}
+	@Transactional
+	public void associarResponsavel(Long restauranteId, Long usuarioId) {
+		Restaurante restaurante = buscarOuFalhar(restauranteId);
+		Usuario usuario = cadastroUsuario.buscarOuFalhar(usuarioId);
+		restaurante.adicionarResponsavel(usuario);
+	}
+	
+	
+	
 	@Transactional
 	public void fecharRestaurante(Long restauranteId) {
 		Restaurante restaurante = buscarOuFalhar(restauranteId);
