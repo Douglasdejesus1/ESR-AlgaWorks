@@ -32,8 +32,8 @@ import com.douglas.algafood.api.model.input.RestauranteInput;
 import com.douglas.algafood.core.validation.ValidacaoException;
 import com.douglas.algafood.domain.exception.CidadeNaoEncontradaException;
 import com.douglas.algafood.domain.exception.CozinhaNaoEncontradaException;
-import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.douglas.algafood.domain.exception.NegocioException;
+import com.douglas.algafood.domain.exception.RestauranteNaoEncontradoException;
 import com.douglas.algafood.domain.model.Restaurante;
 import com.douglas.algafood.domain.repository.RestauranteRepository;
 import com.douglas.algafood.domain.service.CadastroRestauranteService;
@@ -120,8 +120,38 @@ public class RestauranteController {
 	@DeleteMapping("/{restauranteId}/ativo")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void inativar(@PathVariable Long restauranteId) {
-		cadastroRestaurante.inativar(restauranteId);
+			cadastroRestaurante.inativar(restauranteId);
 	}
+	
+	
+	@PutMapping("/ativacoes")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void ativarMultiplos(@RequestBody List<Long> restauranteIds) {
+		try {
+			cadastroRestaurante.ativar(restauranteIds);
+		} catch (RestauranteNaoEncontradoException e) {
+			throw new NegocioException(e.getMessage(), e);
+		}
+	}
+	
+	@DeleteMapping("/ativacoes")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void inativarMultiplos(@RequestBody List<Long> restauranteIds) {
+		try {
+			cadastroRestaurante.inativar(restauranteIds);
+		} catch (RestauranteNaoEncontradoException e) {
+			throw new NegocioException(e.getMessage(), e);
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@PutMapping("/{restauranteId}/abertura")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void abrir(@PathVariable Long restauranteId) {
