@@ -37,7 +37,7 @@ public class FluxoPedidoService {
 		Pedido pedido = emissaoPedido.buscarOuFalhar(pedidoId);
 		
 		
-		if(!pedido.getStatus().equals(StatusPedido.CANCELADO)) {
+		if(!pedido.getStatus().equals(StatusPedido.CRIADO)) {
 			throw new NegocioException(
 					String.format("Stratus do pedido %s não pode ser alterado de %s para %s",pedidoId,
 							pedido.getStatus(),StatusPedido.CANCELADO));

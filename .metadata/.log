@@ -10586,3 +10586,12 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: 3
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-16 22:34:48.808
 !MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-16 22:37:25.897
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-16 22:37:55.296
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-16 22:39:27.196
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
