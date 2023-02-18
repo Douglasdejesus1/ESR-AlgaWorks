@@ -1,6 +1,7 @@
 package com.douglas.algafood.domain.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -11,4 +12,6 @@ import com.douglas.algafood.domain.model.Pedido;
 public interface PedidoRepository extends CustomJpaRepository<Pedido, Long>{	
 	@Query("from Pedido p join fetch p.cliente join fetch p.restaurante r join fetch r.cozinha")
 	List<Pedido> findAll();
+	@Query("from Pedido where codigo = :codigo")
+	Optional<Pedido> findByCodigo(String codigo);
 }
