@@ -21,41 +21,18 @@ public class FluxoPedidoService {
 	@Transactional
 	public void confirmar(Long pedidoId) {
 		Pedido pedido = emissaoPedido.buscarOuFalhar(pedidoId);
-		
-		
-		if(!pedido.getStatus().equals(StatusPedido.CRIADO)) {
-			throw new NegocioException(
-					String.format("Stratus do pedido %s não pode ser alterado de %s para %s",pedidoId,
-							pedido.getStatus(),StatusPedido.CONFIRMADO));
-		}
-		pedido.setStatus(StatusPedido.CONFIRMADO);
-		pedido.setDataConfirmacao(OffsetDateTime.now());	
+		pedido.confirmar();
+			
 	}
 	
 	@Transactional
 	public void cancelar(Long pedidoId) {
-		Pedido pedido = emissaoPedido.buscarOuFalhar(pedidoId);
-		
-		
-		if(!pedido.getStatus().equals(StatusPedido.CRIADO)) {
-			throw new NegocioException(
-					String.format("Stratus do pedido %s não pode ser alterado de %s para %s",pedidoId,
-							pedido.getStatus(),StatusPedido.CANCELADO));
-		}
-		pedido.setStatus(StatusPedido.CANCELADO);
-		pedido.setDataCancelamento(OffsetDateTime.now());	
+		Pedido pedido = emissaoPedido.buscarOuFalhar(pedidoId);	
+		pedido.cancelar();
 	}
 	@Transactional
 	public void entregar(Long pedidoId) {
 		Pedido pedido = emissaoPedido.buscarOuFalhar(pedidoId);
-		
-		
-		if(!pedido.getStatus().equals(StatusPedido.CONFIRMADO)) {
-			throw new NegocioException(
-					String.format("Stratus do pedido %s não pode ser alterado de %s para %s",pedidoId,
-							pedido.getStatus(),StatusPedido.ENTREGUE));
-		}
-		pedido.setStatus(StatusPedido.ENTREGUE);
-		pedido.setDataEntrega(OffsetDateTime.now());	
+		pedido.entregar();
 	}
 }
