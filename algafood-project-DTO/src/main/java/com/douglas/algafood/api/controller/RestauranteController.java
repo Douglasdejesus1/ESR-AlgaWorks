@@ -63,6 +63,7 @@ public class RestauranteController {
 	
 	
 	
+	
 	@JsonView(RestauranteView.Resumo.class)
 	@GetMapping
 	public List<RestauranteModel> listarResumido() {
@@ -81,7 +82,7 @@ public class RestauranteController {
 		
 		MappingJacksonValue restaurantesWrapper = new MappingJacksonValue(restaurantesModel);
 		restaurantesWrapper.setSerializationView(RestauranteView.Resumo.class);
-		if("apenas-nome".equals(projecao)) {
+		if("apenas-nomes".equals(projecao)) {
 			restaurantesWrapper.setSerializationView(RestauranteView.ApenasNomes.class);			
 		}else if("completo".equals(projecao)){
 			restaurantesWrapper.setSerializationView(null);		
