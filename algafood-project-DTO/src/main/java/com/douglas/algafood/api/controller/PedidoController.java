@@ -50,13 +50,16 @@ public class PedidoController {
 	@Autowired
 	private PedidoResumoModelAssembler pedidoResumoModelAssembler;
 	
-	/*@GetMapping
-	public List<PedidoResumoModel> listar(){
-		return pedidoResumoModelAssembler.toCollectionModel(pedidoRepository.findAll());
-	}*/
-	
 	
 	@GetMapping
+	public List<PedidoResumoModel> listar() {
+		List<Pedido> todosPedidos = pedidoRepository.findAll();
+		
+		return pedidoResumoModelAssembler.toCollectionModel(todosPedidos);
+	}
+	
+	
+/*	@GetMapping
 	public MappingJacksonValue listar(@RequestParam(required = false)String campos) {
 		List<Pedido> pedidos = pedidoRepository.findAll();
 		List<PedidoResumoModel> pedidosModel = pedidoResumoModelAssembler.toCollectionModel(pedidos);
@@ -71,7 +74,7 @@ public class PedidoController {
 		}
 		pedidosWrapper.setFilters(filterProvider);
 		return pedidosWrapper;
-	}
+	}*/
 	
 	
     @GetMapping("/{codigoPedido}")

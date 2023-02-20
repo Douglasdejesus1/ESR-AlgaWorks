@@ -10825,3 +10825,240 @@ java.lang.NullPointerException: Cannot invoke "org.springframework.ide.eclipse.b
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-18 18:23:26.952
 !MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-18 18:25:03.279
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-19 22:25:23.669
+!MESSAGE The POM for com.github.bohnman:squiggly-filter-jackson:jar:${squiggly.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-19 22:25:26.127
+!MESSAGE The POM for com.github.bohnman:squiggly-filter-jackson:jar:${squiggly.version} is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:25:26.195
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:25:26.198
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:25:26.201
+!MESSAGE buffering callback sts4.classpath.SwYrfKYL algafood-project-DTO false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:25:26.202
+!MESSAGE executing callback sts4.classpath.SwYrfKYL 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:25:26.267
+!MESSAGE executing callback sts4.classpath.SwYrfKYL SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-02-19 22:25:26.464
+!MESSAGE Could not download sources for com.github.bohnman:squiggly-filter-jackson:${squiggly.version}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.github.bohnman:squiggly-filter-jackson:jar:sources:${squiggly.version}
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:285)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.github.bohnman:squiggly-filter-jackson:jar:sources:${squiggly.version}
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2023-02-19 22:25:26.464
+!MESSAGE Could not resolve artifact com.github.bohnman:squiggly-filter-jackson:jar:sources:${squiggly.version}
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2023-02-19 22:25:26.464
+!MESSAGE Missing com.github.bohnman:squiggly-filter-jackson:jar:sources:${squiggly.version}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-19 22:27:09.580
+!MESSAGE The POM for org.modelmapper:modelmapper:jar:${modelmapper.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-19 22:27:09.707
+!MESSAGE The POM for com.github.bohnman:squiggly-filter-jackson:jar:${squiggly.version} is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:27:10.124
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:27:10.127
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:27:10.130
+!MESSAGE buffering callback sts4.classpath.SwYrfKYL algafood-project-DTO false 103
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:27:10.130
+!MESSAGE executing callback sts4.classpath.SwYrfKYL 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:27:10.148
+!MESSAGE executing callback sts4.classpath.SwYrfKYL SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-19 22:27:10.863
+!MESSAGE The POM for org.modelmapper:modelmapper:jar:${modelmapper.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-19 22:27:10.981
+!MESSAGE The POM for com.github.bohnman:squiggly-filter-jackson:jar:${squiggly.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-02-19 22:27:11.182
+!MESSAGE Could not download sources for org.modelmapper:modelmapper:${modelmapper.version}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.modelmapper:modelmapper:jar:sources:${modelmapper.version}
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:285)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.modelmapper:modelmapper:jar:sources:${modelmapper.version}
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2023-02-19 22:27:11.182
+!MESSAGE Could not resolve artifact org.modelmapper:modelmapper:jar:sources:${modelmapper.version}
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2023-02-19 22:27:11.182
+!MESSAGE Missing org.modelmapper:modelmapper:jar:sources:${modelmapper.version}
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-02-19 22:27:11.237
+!MESSAGE Could not download javadoc for com.github.bohnman:squiggly-filter-jackson:${squiggly.version}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.github.bohnman:squiggly-filter-jackson:jar:javadoc:${squiggly.version}
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.github.bohnman:squiggly-filter-jackson:jar:javadoc:${squiggly.version}
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2023-02-19 22:27:11.237
+!MESSAGE Could not resolve artifact com.github.bohnman:squiggly-filter-jackson:jar:javadoc:${squiggly.version}
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2023-02-19 22:27:11.237
+!MESSAGE Missing com.github.bohnman:squiggly-filter-jackson:jar:javadoc:${squiggly.version}
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-02-19 22:30:56.856
+!MESSAGE Could not download javadoc for org.modelmapper:modelmapper:${modelmapper.version}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.modelmapper:modelmapper:jar:javadoc:${modelmapper.version}
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.modelmapper:modelmapper:jar:javadoc:${modelmapper.version}
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2023-02-19 22:30:56.856
+!MESSAGE Could not resolve artifact org.modelmapper:modelmapper:jar:javadoc:${modelmapper.version}
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2023-02-19 22:30:56.856
+!MESSAGE Missing org.modelmapper:modelmapper:jar:javadoc:${modelmapper.version}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:30.050
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:30.054
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:30.057
+!MESSAGE buffering callback sts4.classpath.SwYrfKYL algafood-project-DTO false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:30.057
+!MESSAGE executing callback sts4.classpath.SwYrfKYL 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:30.074
+!MESSAGE executing callback sts4.classpath.SwYrfKYL SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 22:33:31.219
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 22:33:31.462
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:33.046
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:33.049
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:33.052
+!MESSAGE buffering callback sts4.classpath.SwYrfKYL algafood-project-DTO false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:33.052
+!MESSAGE executing callback sts4.classpath.SwYrfKYL 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-19 22:33:33.065
+!MESSAGE executing callback sts4.classpath.SwYrfKYL SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 22:52:27.015
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 22:57:54.440
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:04:14.487
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:04:48.225
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:07:48.976
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:07:49.177
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:10:47.616
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:12:23.377
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:14:57.108
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:15:06.893
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:16:01.788
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:18:34.233
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:20:19.126
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-02-19 23:25:47.013
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported

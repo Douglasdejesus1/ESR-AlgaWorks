@@ -14,14 +14,16 @@ import com.douglas.algafood.domain.model.Pedido;
 public class PedidoResumoModelAssembler {
 
 	@Autowired
-	ModelMapper modelMapper;
+	private ModelMapper modelMapper;
 	
 	public PedidoResumoModel toModel(Pedido pedido) {
 		return modelMapper.map(pedido, PedidoResumoModel.class);
 	}
 	
-	public List<PedidoResumoModel> toCollectionModel(List<Pedido> pedidos){
-		return pedidos.stream().map(pedido -> toModel(pedido)).collect(Collectors.toList());
+	public List<PedidoResumoModel> toCollectionModel(List<Pedido> pedidos) {
+		return pedidos.stream()
+				.map(pedido -> toModel(pedido))
+				.collect(Collectors.toList());
 	}
 	
 	
