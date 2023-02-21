@@ -7,6 +7,10 @@ import javax.validation.Valid;
 import org.apache.commons.lang3.StringUtils;
 import org.codehaus.groovy.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -52,13 +56,27 @@ public class PedidoController {
 	@Autowired
 	private PedidoResumoModelAssembler pedidoResumoModelAssembler;
 	
-	
 	@GetMapping
+	public Page<PedidoResumoModel> pesquisar(PedidoFilter filtro, 
+			@PageableDefault(size = 10) Pageable pageable) {
+		Page<Pedido> pedidosPage = pedidoRepository.findAll(
+				PedidoSpecs.usandoFiltro(filtro), pageable);
+		
+		List<PedidoResumoModel> pedidosResumoModel = pedidoResumoModelAssembler
+				.toCollectionModel(pedidosPage.getContent());
+		
+		Page<PedidoResumoModel> pedidosResumoModelPage = new PageImpl<>(
+				pedidosResumoModel, pageable, pedidosPage.getTotalElements());
+		
+		return pedidosResumoModelPage;
+	}
+	
+	/*@GetMapping
 	public List<PedidoResumoModel> pesquisar(PedidoFilter filtro) {
 		List<Pedido> todosPedidos = pedidoRepository.findAll(PedidoSpecs.usandoFiltro(filtro));
 		
 		return pedidoResumoModelAssembler.toCollectionModel(todosPedidos);
-	}
+	}*/
 	
 	
 /*	@GetMapping

@@ -52,8 +52,7 @@ public class Pedido {
 	
 	
 	@CreationTimestamp
-	@Column(nullable=false, columnDefinition = "datetime")
-	private LocalDateTime dataCriacao;
+	private OffsetDateTime dataCriacao;
 	
 	private OffsetDateTime dataConfirmacao;
 	private OffsetDateTime dataCancelamento;
