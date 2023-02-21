@@ -29,7 +29,9 @@ import com.douglas.algafood.domain.exception.NegocioException;
 import com.douglas.algafood.domain.model.Pedido;
 import com.douglas.algafood.domain.model.Usuario;
 import com.douglas.algafood.domain.repository.PedidoRepository;
+import com.douglas.algafood.domain.repository.filter.PedidoFilter;
 import com.douglas.algafood.domain.service.EmissaoPedidoService;
+import com.douglas.algafood.infrastructure.repository.spec.PedidoSpecs;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 
@@ -52,8 +54,8 @@ public class PedidoController {
 	
 	
 	@GetMapping
-	public List<PedidoResumoModel> listar() {
-		List<Pedido> todosPedidos = pedidoRepository.findAll();
+	public List<PedidoResumoModel> pesquisar(PedidoFilter filtro) {
+		List<Pedido> todosPedidos = pedidoRepository.findAll(PedidoSpecs.usandoFiltro(filtro));
 		
 		return pedidoResumoModelAssembler.toCollectionModel(todosPedidos);
 	}

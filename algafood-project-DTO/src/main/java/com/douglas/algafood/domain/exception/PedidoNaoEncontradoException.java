@@ -7,6 +7,6 @@ public class PedidoNaoEncontradoException extends EntidadeNaoEncontradaException
 
 
 	public PedidoNaoEncontradoException(String codigoPedido) {
-		super(String.format("Pedido com codigo %d não existe no banco de dados", codigoPedido));
+		super(String.format("Pedido com codigo %s não existe no banco de dados", codigoPedido));
 	}
 }
