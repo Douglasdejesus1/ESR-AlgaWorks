@@ -4,8 +4,11 @@ import java.util.List;
 
 import javax.validation.Valid;
 
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +22,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.douglas.algafood.api.assembler.CozinhaInputDissassembler;
 import com.douglas.algafood.api.assembler.CozinhaModelAssembler;
-import com.douglas.algafood.api.assembler.EstadoInputDisassembler;
 import com.douglas.algafood.api.model.CozinhaModel;
 import com.douglas.algafood.api.model.input.CozinhaInput;
 import com.douglas.algafood.domain.model.Cozinha;
@@ -46,10 +48,23 @@ public class CozinhaController {
 	private CozinhaModelAssembler cozinhaModelAssembler;
 
 	// GET listar
+	
 	@GetMapping
-	public List<CozinhaModel> listar() {
-		return cozinhaModelAssembler.toCollectionModel(cozinhaRepository.findAll());
+	public Page<CozinhaModel> listar(@PageableDefault(size=2) Pageable pageable) {
+		Page<Cozinha> cozinhasPage = cozinhaRepository.findAll(pageable);
+		List<CozinhaModel> cozinhasModel = cozinhaModelAssembler.toCollectionModel(cozinhasPage.getContent());
+		
+		Page<CozinhaModel> cozinhaModelPage = new PageImpl<>(cozinhasModel, pageable, cozinhasPage.getTotalElements());
+	
+		return cozinhaModelPage;
 	}
+/*	@GetMapping
+	public List<CozinhaModel> listar(Pageable pageable) {
+		Page<Cozinha> cozinhasPage = cozinhaRepository.findAll(pageable);
+		
+		
+		return cozinhaModelAssembler.toCollectionModel(cozinhasPage.getContent());
+	}*/
 
 	//@GetMapping(produces = MediaType.APPLICATION_XML_VALUE)
 	//public CozinhasXmlWrapper listarXml() {
