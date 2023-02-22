@@ -28,6 +28,7 @@ import com.douglas.algafood.api.assembler.PedidoResumoModelAssembler;
 import com.douglas.algafood.api.model.PedidoModel;
 import com.douglas.algafood.api.model.PedidoResumoModel;
 import com.douglas.algafood.api.model.input.PedidoInput;
+import com.douglas.algafood.core.data.PageableTranslator;
 import com.douglas.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.douglas.algafood.domain.exception.NegocioException;
 import com.douglas.algafood.domain.model.Pedido;
@@ -38,6 +39,7 @@ import com.douglas.algafood.domain.service.EmissaoPedidoService;
 import com.douglas.algafood.infrastructure.repository.spec.PedidoSpecs;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
+import com.google.common.collect.ImmutableMap;
 
 @RestController
 @RequestMapping("/pedidos")
@@ -59,6 +61,7 @@ public class PedidoController {
 	@GetMapping
 	public Page<PedidoResumoModel> pesquisar(PedidoFilter filtro, 
 			@PageableDefault(size = 2) Pageable pageable) {
+		pageable = traduzirPageable(pageable);
 		Page<Pedido> pedidosPage = pedidoRepository.findAll(
 				PedidoSpecs.usandoFiltro(filtro), pageable);
 		
@@ -103,6 +106,18 @@ public class PedidoController {
         
         return pedidoModelAssembler.toModel(pedido);
     } 
+    private Pageable traduzirPageable(Pageable apiPageable) {
+		var mapeamento = ImmutableMap.of(
+				"codigo", "codigo",
+				"restaurante.nome", "restaurante.nome",
+				"nomeCliente", "cliente.nome",
+				"valorTotal", "valorTotal"
+			);
+		
+		return PageableTranslator.translate(apiPageable, mapeamento);
+	}
+    
+    
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public PedidoModel adicionar(@Valid @RequestBody PedidoInput pedidoInput) {
