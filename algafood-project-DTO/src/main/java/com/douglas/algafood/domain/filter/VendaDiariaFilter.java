@@ -10,6 +10,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class VendaDiariaFilter {
+	
+	private Long restauranteId;
+	
 	@DateTimeFormat(iso = ISO.DATE_TIME)
 	private OffsetDateTime dataCriacaoInicio;
 	
