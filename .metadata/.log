@@ -12674,3 +12674,177 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 22:29:43.383
 !MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:05:05.734
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:08:05.146
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:09:54.806
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:11:20.782
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:11:20.855
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:12:35.258
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:12:35.332
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:12:45.931
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:13:34.859
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:13:44.636
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:17:02.276
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:25.188
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DmRejibf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:25.189
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.DmRejibf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:25.189
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:25.190
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DmRejibf => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:49.919
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:49.919
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@53e7b512[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:49.920
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.343
+!MESSAGE Boot LS startup time from start to initialized: 1423ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.407
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ykuuXlsQisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.407
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.408
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.408
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.408
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.408
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ykuuXlsQ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.412
+!MESSAGE classpath=125 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.414
+!MESSAGE buffering callback sts4.classpath.ykuuXlsQ algafood-project-DTO false 125
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.415
+!MESSAGE executing callback sts4.classpath.ykuuXlsQ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:51.661
+!MESSAGE executing callback sts4.classpath.ykuuXlsQ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:58.140
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ykuuXlsQ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:58.140
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ykuuXlsQ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:58.141
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:58.141
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ykuuXlsQ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:58.159
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:58.159
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@53e7b512[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:58.160
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:17:58.228
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.688
+!MESSAGE Boot LS startup time from start to initialized: 1526ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.770
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rBrxkYOpisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.771
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.771
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.771
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.772
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.772
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rBrxkYOp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.774
+!MESSAGE classpath=125 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.778
+!MESSAGE buffering callback sts4.classpath.rBrxkYOp algafood-project-DTO false 125
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:17:59.778
+!MESSAGE executing callback sts4.classpath.rBrxkYOp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-03-07 23:18:00.013
+!MESSAGE executing callback sts4.classpath.rBrxkYOp SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:26:02.486
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:27:19.081
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:27:48.013
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-03-07 23:29:30.608
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:31:36.005
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:33:08.575
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-03-07 23:33:35.786
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
