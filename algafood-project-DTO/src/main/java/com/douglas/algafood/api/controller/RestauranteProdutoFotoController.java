@@ -1,7 +1,6 @@
 package com.douglas.algafood.api.controller;
 
-import java.nio.file.Path;
-import java.util.UUID;
+import java.io.IOException;
 
 import javax.validation.Valid;
 
@@ -10,7 +9,6 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -37,7 +35,7 @@ public class RestauranteProdutoFotoController {
 
 	@PutMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
 	public FotoProdutoModel atualizarFoto(@PathVariable Long restauranteId, @PathVariable Long produtoId,
-			@Valid FotoProdutoInput fotoProdutoInput) {
+			@Valid FotoProdutoInput fotoProdutoInput) throws IOException {
 
 		Produto produto = cadastroProduto.buscarOuFalhar(restauranteId, produtoId);
 
@@ -50,7 +48,7 @@ public class RestauranteProdutoFotoController {
 		foto.setTamanho(arquivo.getSize());
 		foto.setNomeArquivo(arquivo.getOriginalFilename());
 
-		FotoProduto fotosalva = catalogoFotoProduto.salvar(foto);
+		FotoProduto fotosalva = catalogoFotoProduto.salvar(foto,arquivo.getInputStream());
 
 		return fotoProdutoModelAssembler.toModel(fotosalva);
 	}
